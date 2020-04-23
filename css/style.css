@@ -1,0 +1,91 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.header-img {
+    background: url("../assets/yosemite.JPG");
+    width: 100%;
+    height: 0;
+    padding: 0 0 35%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+/*    background: url('http://www.kodhus.com/freecourse-images/header-image.jpg');*/
+/*    opacity: 65%;*/
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+.menu li {
+    float: left;
+/*    border-right: 1px solid #bbb;*/
+}
+/*
+.menu li:last-child {
+  border-right: none;
+}
+*/
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+.menu li a:hover {
+/*  background-color: #111111;*/
+    background-color: #666;
+}
+
+.active {
+  background-color: #666;
+}
+
+.content {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 30px;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+footer a {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    padding: 5px;
+    background-color: #333333;
+    text-align: center;
+    color: white;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
