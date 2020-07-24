@@ -2,6 +2,16 @@ html {
     scroll-behavior: smooth;
 }
 
+.header{
+    padding: 10px;
+    padding-bottom: 0px;
+    text-align: center;
+    background: #333333;
+    color: white;
+    font-size: 28pt;
+    font-family: monospace;
+}
+
 .header-img {
     background: url("../assets/yosemite.JPG");
     width: 100%;
@@ -16,6 +26,22 @@ html {
 /*    opacity: 65%;*/
 }
 
+.menu{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333333;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+@media screen and (max-height: 450px){
+    .menu {padding-top: 15px;}
+}   
+
 .menu ul {
   list-style-type: none;
   margin: 0;
@@ -24,14 +50,11 @@ html {
   background-color: #333333;
 }
 .menu li {
+    font-size: 14pt;
     float: left;
-/*    border-right: 1px solid #bbb;*/
+    width: 250px;
 }
-/*
-.menu li:last-child {
-  border-right: none;
-}
-*/
+
 .menu li a {
   display: block;
   color: white;
@@ -46,12 +69,18 @@ html {
 
 .active {
   background-color: #666;
+    background-color: #3e8e41;
+}
+.menu li a:hover .active{
+    background-color: #3e8e41;
 }
 
 .content {
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 30px;
+  margin-left: 250px;
+/*  padding: 0px 10px;*/
 }
 .sticky {
   position: sticky;
@@ -68,7 +97,7 @@ html {
 }
 
 #content-wrap {
-    padding-bottom: 2.5rem;
+    padding-bottom: 0rem;
 }
 
 footer a {
@@ -76,16 +105,85 @@ footer a {
     bottom: 0;
     width: 100%;
     height: 2.5rem;
-    padding: 5px;
+/*    padding: 5px;*/
     background-color: #333333;
     text-align: center;
     color: white;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: monospace;
+    font-size: 12pt
 }
 
 a {
     text-decoration: none;
 }
+
+.fa {
+    color: #bababa;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.fa:hover{
+    opacity: .7;
+}
+
+.project-title{
+    color:black;
+}
+.project-title:hover{
+    color: #a9a9a9
+}
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #333333;
+  color: white;
+  padding: 0px;
+/*
+  padding-top: 12px;
+  padding-bottom: 12px;
+*/
+  font-size: 14pt;
+  font-family: monospace;
+  border: none;
+  width: 250px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #3f3f3f;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+/*  padding: 12px 16px;*/
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3f3f3f;}
