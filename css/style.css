@@ -149,6 +149,10 @@ a {
   width: 250px;
 }
 
+.dropbtn .active:hover{
+    background-color: #49738e;
+}
+
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
@@ -186,5 +190,70 @@ a {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #454545;}
+.dropdown:hover .dropbtn.active {background-color: #49738e;}
 
+
+
+form{
+    display: inline-block;
+}
+button {
+  background-color: #49738e; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    cursor: pointer;
+}
+.portfolio-button{
+    border-radius: 10px;
+}
+.portfolio-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+.portfolio-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.portfolio-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.portfolio-button:hover span {
+  padding-right: 50px;
+}
+
+.portfolio-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.portfolio-button:active{
+    transform: translateY(5px);
+}
+
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  margin: 10px;
+}
 
