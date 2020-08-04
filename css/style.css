@@ -20,15 +20,31 @@ html {
     text-align: center;
     background: #333333;
     color: white;
-    font-size: 28pt;
     font-family: Montserrat;
 }
 
+.header-main{
+    font-size: 28pt;
+    margin-bottom: 15px;
+}
+.header-sub{
+    font-size: 12pt;
+    padding-top: 0px;
+    margin-top: 0px;
+    color: #bababa;
+}
+
+hr {
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    border-width: 0px;
+    height: 1px;
+    background-color: #666;
+}
 
 nav {
-    box-shadow: 2px 0px 5px #3f3f3f;
-}
-nav{
+    box-shadow: 2px 0px 3px #3f3f3f;
     height: 100%;
     width: 250px;
     position: fixed;
