@@ -59,7 +59,16 @@ nav {
 }
 @media screen and (max-height: 450px){
     .menu {padding-top: 15px;}
+    .mainpic {width: 100px};
+    .openbtn{margin-left: 15px;}
 } 
+
+/*
+.loading{
+    filter: blur(6px);
+}
+*/
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -100,6 +109,7 @@ nav .semiactive{
     padding-top: 30px;
     margin-left: 250px;
     transition: margin-left .25s;
+    min-width: 450px;
 }
 
 #page-container {
@@ -114,7 +124,7 @@ nav .semiactive{
 
 body {
     font-family: Montserrat;
-    font-size: 12pt
+    font-size: 12pt;
 }
 
 a {
@@ -289,7 +299,8 @@ nav .closebtn:hover{
 }
 .openbtn{
     margin-top: 20px;
-    margin-left: 35px;
+    margin-left: 30px;
+    padding-right: 20px;
     padding: 0px;
     font-size: 30px;
     cursor: pointer;
@@ -332,3 +343,6 @@ nav .closebtn:hover{
     0% {opacity:0;}
     100% {opacity:1;}
 }
+
+
+.blurry-load{-webkit-filter:blur(8px);filter:blur(8px)}@-webkit-keyframes blurOut{0%{-webkit-filter:blur(20px);filter:blur(20px)}50%{-webkit-filter:blur(10px);filter:blur(10px)}to{-webkit-filter:blur(0);filter:blur(0)}}@keyframes blurOut{0%{-webkit-filter:blur(20px);filter:blur(20px)}50%{-webkit-filter:blur(10px);filter:blur(10px)}to{-webkit-filter:blur(0);filter:blur(0)}}.blur-out{-webkit-animation:blurOut .5s ease-out;animation:blurOut .5s ease-out}@-webkit-keyframes shimmer{0%{background-position:-100vw 0}to{background-position:100vw 0}}@keyframes shimmer{0%{background-position:-100vw 0}to{background-position:100vw 0}}.no-blur{-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:shimmer;animation-name:shimmer;-webkit-animation-timing-function:linear;animation-timing-function:linear;background:#f6f7f8;background:gradient(linear,left top,right top,color-stop(8%,#eee),color-stop(18%,#ddd),color-stop(33%,#eee));background:linear-gradient(90deg,#eee 8%,#ddd 18%,#eee 33%)}
