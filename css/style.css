@@ -108,7 +108,6 @@ nav .semiactive{
     padding-right: 15%;
     padding-top: 30px;
     margin-left: 250px;
-    transition: margin-left .25s;
     min-width: 450px;
 }
 

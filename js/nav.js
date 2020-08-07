@@ -4,6 +4,7 @@ function openNav() {
     var elements = document.getElementsByClassName("content");
     for(var i=0; i<elements.length; i++) { 
         elements[i].style.marginLeft = "250px";
+        elements[i].style.transition = "margin-left 0s";
     }
     document.getElementById("smallnav").style.display = "none";
 }
@@ -13,6 +14,7 @@ function closeNav() {
     document.getElementById("sidebar").style.width = "0";
     var elements = document.getElementsByClassName("content");
     for(var i=0; i<elements.length; i++) { 
+        elements[i].style.transition = "margin-left .25s";
         elements[i].style.marginLeft = "0";
     }
     document.getElementById("smallnav").style.display = "block";
