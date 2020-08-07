@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<script type="text/javascript" src="./js/nav.js"></script>
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -12,12 +15,20 @@
         <div id="page-container">  
             <div id="content-wrap">
                 
-                <nav>
+                <div id="smallnav">
+                    <button class="openbtn" onclick="openNav()">&#9776;</button>
+                </div>      
+                
+                <nav id="sidebar">       
+                    
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" target="_self">&times;</a>
+                    
+                    
                     <a href="index.html" target="_self"><h1 class="header header-main">Matt Beveridge</h1></a>
                     <p class="header header-sub">AI/ML at MIT</p>
                     
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                    <div style="text-align: center">
+                    <div id="icons" style="text-align: center">
                         <a href="https://www.linkedin.com/in/mattbev/" class="fa fa-linkedin"></a>
                         <a href="https://github.com/mattbev" class="fa fa-github"></a>
                         <a href="mailto:mattbev@mit.edu" class="fa fa-envelope" target="_self"></a>
@@ -51,17 +62,17 @@
                     <h1>Bio</h1>
                     
                     <div style="display: flex; float: left; justify-content: left">
-                        <img src="assets/baybridge.jpeg" alt="Me at Yosemite" width="300px" style="margin:0px 20px 20px 0px; border-radius: 5%; box-shadow: 0 0 8px 8px white inset">
+                        <img src="assets/baybridge.jpeg" alt="Me" width="300px" style="margin:0px 20px 20px 0px; border-radius: 5%; box-shadow: 0 0 8px 8px white inset">
                     </div>
                     
 
-                    <p>Current grad student and former undergrad at the <a href="http://web.mit.edu/">Massachusetts Institute of Technology</a>. My academic focus has been machine learning, particularly the field of vision. The impact areas I find most interesting are agriculture, finance, space exploration, and public policy. </p>
+                    <p>Current grad student and former undergrad at the <a href="http://web.mit.edu/" class="intext-link">Massachusetts Institute of Technology</a>. My academic focus has been machine learning, particularly the field of vision. The impact areas I find most interesting are agriculture, finance, space exploration, and public policy. </p>
 
-                    <P>Around campus I've been involved with the <a href="https://www.mitenergyhack.org/">EnergyHack</a> as a director, with a <a href="http://www.dke.mit.edu/">fraternity</a> as the treasurer, and briefly as an athlete on the <a href="https://www.mitathletics.com/sports/m-footbl/index">varsity football team</a>. Formerly, I was a tutor for several years through my <a href="https://education.fcps.org/ohs/home">high school's</a> tutoring center where I tutored students in all levels of math. While my academic focus is primarily in the sciences, I also enjoy music and theater. Thus, I am also pursuing a minor in Theater Arts. </P>
+                    <P>Around campus I've been involved with the <a href="https://www.mitenergyhack.org/" class="intext-link">EnergyHack</a> as a director, with a <a href="http://www.dke.mit.edu/" class="intext-link">fraternity</a> as the treasurer, and briefly as an athlete on the <a href="https://www.mitathletics.com/sports/m-footbl/index" class="intext-link">varsity football team</a>. Formerly, I was a tutor for several years through my <a href="https://education.fcps.org/ohs/home" class="intext-link">high school's</a> tutoring center where I tutored students in all levels of math. While my academic focus is primarily in the sciences, I also enjoy music and theater. Thus, I am also pursuing a minor in Theater Arts. </P>
 
-                    <p>My recent research in the <a href="https://www.csail.mit.edu/">MIT Computer Science and Artificial Intelligence Laboratory</a> has focused on new neural network layer types for computer vision. Earlier on in the lab, I also researched human decision making for use in artificial agents. Additionally, in the <a href="https://www.media.mit.edu/">MIT Media Lab</a>, I researched better vision methods for autonomous vehicles in inclement weather conditions. This upcoming summer, I will be researching <a href="https://www.darpa.mil/program/competency-aware-machine-learning">Competency-Aware Machine Learning</a> at <a href="https://www.draper.com/">Draper Laboratory</a> in Cambridge.</p>
+                    <p>My recent research in the <a href="https://www.csail.mit.edu/" class="intext-link">MIT Computer Science and Artificial Intelligence Laboratory</a> has focused on new neural network layer types for computer vision. Earlier on in the lab, I also researched human decision making for use in artificial agents. Additionally, in the <a href="https://www.media.mit.edu/" class="intext-link">MIT Media Lab</a>, I researched better vision methods for autonomous vehicles in inclement weather conditions. This upcoming summer, I will be researching <a href="https://www.darpa.mil/program/competency-aware-machine-learning" class="intext-link">Competency-Aware Machine Learning</a> at <a href="https://www.draper.com/" class="intext-link">Draper Laboratory</a> in Cambridge.</p>
 
-                    <p>Professionally, I've held roles ranging from software developer to machine learning engineer at small <a href="https://nference.ai/">startups</a> to large <a href="https://www.nasa.gov/">government agencies</a>. For the highlights, see my resume below!</p>
+                    <p>Professionally, I've held roles ranging from software developer to machine learning engineer at small <a href="https://nference.ai/" class="intext-link">startups</a> to large <a href="https://www.nasa.gov/" class="intext-link">government agencies</a>. For the highlights, see my resume below!</p>
                 </div>
                 
 
@@ -74,7 +85,7 @@
                     <p>Last updated: <b>April 21<sup>st</sup>, 2020</b>.</p>
 
                     <embed src="assets/Beveridge,%20Matthew%20(Resume_GradAnticipated)%20-%20September.22.2019.pdf" type="application/pdf" width="100%" height="600px" style="padding-bottom: 0px; border-bottom: 1px solid #333333">
-</div>
+                </div>
                 
             </div>
             

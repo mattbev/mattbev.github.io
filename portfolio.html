@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<script type="text/javascript" src="./js/nav.js"></script>
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -12,12 +15,19 @@
         <div id="page-container">  
             <div id="content-wrap">
                 
-                <nav>
+                <div id="smallnav">
+                    <button class="openbtn" onclick="openNav()">&#9776;</button>
+                </div>  
+                
+                <nav id="sidebar">
+                    
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" target="_self">&times;</a>
+                    
                     <a href="index.html" target="_self"><h1 class="header header-main">Matt Beveridge</h1></a>
                     <p class="header header-sub">AI/ML at MIT</p>
                     
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                    <div style="text-align: center">
+                    <div id="icons" style="text-align: center">
                         <a href="https://www.linkedin.com/in/mattbev" class="fa fa-linkedin"></a>
                         <a href="https://github.com/mattbev" class="fa fa-github"></a>
                         <a href="mailto:mattbev@mit.edu" class="fa fa-envelope" target="_self"></a>
@@ -45,7 +55,7 @@
                 <div class="content">                
                     
                     <h1>Portfolio</h1>
-                    <p>For ease of presentation, my projects are split between personal and professional.</p>
+                    <p>For ease of presentation, my projects are split into personal and professional.</p>
 
                     <br><br>
                     <hr>
