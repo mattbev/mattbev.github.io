@@ -44,6 +44,14 @@ hr {
     background-color: #666;
 }
 
+#mainpic{
+    width: 300px;
+    height: auto;
+    margin:0px 20px 20px 0px; 
+    border-radius: 5%; 
+    box-shadow: 0 0 8px 8px white inset;
+}
+
 nav {
     box-shadow: 2px 0px 3px #3f3f3f;
     height: 100%;
