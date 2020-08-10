@@ -6,6 +6,8 @@ function openNav() {
         elements[i].style.marginLeft = "250px";
     }
     document.getElementById("smallnav").style.display = "none";
+    document.getElementById("page-container").style.paddingTop = "0";
+    document.getElementById("page-container").style.transition = "0";
 }
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
@@ -17,4 +19,6 @@ function closeNav() {
         elements[i].style.marginLeft = "0";
     }
     document.getElementById("smallnav").style.display = "block";
+    document.getElementById("page-container").style.transition = ".25s";
+    document.getElementById("page-container").style.paddingTop = "65px";
 }

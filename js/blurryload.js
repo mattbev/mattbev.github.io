@@ -2,7 +2,7 @@ class BlurryImageLoad{
     supportsCSSFilters(t){
         void 0===t&&(t=!1);
         const e=document.createElement("test");
-        e.style.cssText=(t?"-webkit-":"")+"filter: blur(8px)";
+        e.style.cssText=(t?"-webkit-":"")+"filter: blur(2px)";
         const s=0!=e.style.length,r=void 0===document.documentMode||document.documentMode>9;
         return s&&r
     }
