@@ -37,17 +37,19 @@ html {
 .header-mini{
     vertical-align: middle;
     color: white;
-    font-size: 20pt;
+/*    color: black;*/
+/*    font-size: 20pt;*/
+    font-size: 28pt;
     margin-top: 10px;
     padding-left: 10%;
+    padding-bottom: 0;
     text-align: left;
     display: inline-block;
     font-family: Montserrat;
 }
-#smallnav #icons{
-    vertical-align: middle;
-    float: ;
-    padding-left: 20px;
+.mobile-menu #icons{
+    padding-top: 10%;
+    padding-left: 40px;
     display: inline-block;
 }
 #smallnav .header-sub{
@@ -336,6 +338,8 @@ nav .closebtn:hover{
     cursor: pointer;
     color: #bababa;
     background-color: #333333;
+/*    color: #3f3f3f;*/
+/*    background-color: white;*/
     position: relative;
     float: right;
 }
@@ -348,9 +352,9 @@ nav .closebtn:hover{
     right: 0;
     left: 0;
     width: 100%;
-    height: 65px;
+    height: 85px;
     background-color: #333333;
-    opacity: 0;
+/*    opacity: 0;*/
     display: none;
     
     position: fixed;
@@ -362,35 +366,150 @@ nav .closebtn:hover{
     
 /*    margin: 0px 20px;*/
 /*    margin-right: 10%;*/
+/*
     -webkit-animation: fadeIn ease .5s;
     -webkit-animation-delay: .5s;
     -webkit-animation-fill-mode: forwards;
+*/
 }
 
 @keyframes fadeIn {
     0% {opacity:0;}
-    100% {opacity:1;}
+    100% {opacity:.9;}
 }
 
 @-moz-keyframes fadeIn {
     0% {opacity:0;}
-    100% {opacity:1;}
+    100% {opacity:.9;}
 }
 
 @-webkit-keyframes fadeIn {
     0% {opacity:0;}
-    100% {opacity:1;}
+    100% {opacity:.9;}
 }
 
 @-o-keyframes fadeIn {
     0% {opacity:0;}
-    100% {opacity:1;}
+    100% {opacity:.9;}
 }
 
 @-ms-keyframes fadeIn {
     0% {opacity:0;}
-    100% {opacity:1;}
+    100% {opacity:.9;}
 }
 
+###
+
+@keyframes fadeOut {
+    0% {opacity:.9;}
+    100% {opacity:0;}
+}
+
+@-moz-keyframes fadeOut {
+    0% {opacity:.9;}
+    100% {opacity:0;}
+}
+
+@-webkit-keyframes fadeOut {
+    0% {opacity:.9;}
+    100% {opacity:0;}
+}
+
+@-o-keyframes fadeOut {
+    0% {opacity:.9;}
+    100% {opacity:0;}
+}
+
+@-ms-keyframes fadeOut {
+    0% {opacity:.9;}
+    100% {opacity:0;}
+}
+
+#overlay-menu{
+    display: none;
+    opacity: 0;
+    -webkit-animation: fadeIn ease .5s;
+    -webkit-animation-fill-mode: forwards;
+}
+.mobile-menu{
+    padding-top: 50px;
+    text-align: center;
+    top: 95px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+/*    opacity: .9;*/
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+.mobile-menu li {
+    font-size: 14pt;
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16pt;
+}
+.mobile-menu li a h2{
+    color: #333333;
+    margin: 3px;
+}
+.mobile-menu .active {
+    color: #49738e;
+    text-decoration: underline;
+}
+/*
+.mobile-menu .semiactive{
+    background-color: #49738e;
+}
+.mobile-menu li.dropdownbtn{
+    background-color: white;
+}
+*/
 
 .blurry-load{-webkit-filter:blur(8px);filter:blur(8px)}@-webkit-keyframes blurOut{0%{-webkit-filter:blur(20px);filter:blur(20px)}50%{-webkit-filter:blur(10px);filter:blur(10px)}to{-webkit-filter:blur(0);filter:blur(0)}}@keyframes blurOut{0%{-webkit-filter:blur(20px);filter:blur(20px)}50%{-webkit-filter:blur(10px);filter:blur(10px)}to{-webkit-filter:blur(0);filter:blur(0)}}.blur-out{-webkit-animation:blurOut .5s ease-out;animation:blurOut .5s ease-out}@-webkit-keyframes shimmer{0%{background-position:-100vw 0}to{background-position:100vw 0}}@keyframes shimmer{0%{background-position:-100vw 0}to{background-position:100vw 0}}.no-blur{-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:shimmer;animation-name:shimmer;-webkit-animation-timing-function:linear;animation-timing-function:linear;background:#f6f7f8;background:gradient(linear,left top,right top,color-stop(8%,#eee),color-stop(18%,#ddd),color-stop(33%,#eee));background:linear-gradient(90deg,#eee 8%,#ddd 18%,#eee 33%)}
+
+
+#hamburgerMenu{
+    margin-top: 20px;
+    margin-right: 5%;
+    padding: 0px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #bababa;
+    background-color: #333333;
+    float: right;
+    vertical-align: middle;
+}
+#hamburgerMenu:hover{
+    transition: .25s;
+    opacity: .7;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 2px;
+  background-color: #bababa;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 5px) ;
+  transform: rotate(-45deg) translate(-6px, 5px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -5px) ;
+  transform: rotate(45deg) translate(-6px, -5px) ;
+}
