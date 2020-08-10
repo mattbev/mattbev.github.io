@@ -86,15 +86,14 @@ nav {
     background-color: #333333;
     overflow-x: hidden;
     padding-top: 20px;
-    transition: width .25s;
 }
 @media screen and (max-height: 450px){
     #sidebar {padding-top: 15px;}
     .openbtn{margin-left: 15px;}
 } 
 @media screen and (max-width: 800px){
-    #sidebar {
-/*        width: 0px;*/
+    nav .closebtn{
+        display: block;
     }
 }
 
@@ -130,6 +129,9 @@ nav .active a:hover {
 nav .semiactive{
     background-color: #49738e;
 }
+#sidebar{
+    transition: width .25s;
+}
 
 
 .content {
@@ -138,12 +140,12 @@ nav .semiactive{
     padding-top: 30px;
     margin-left: 250px;
     min-width: 450px;
+    transition: .25s;
 }
 
 #page-container {
     position: relative;
     min-height: 100vh;
-    transition: padding
 }
 
 #content-wrap {

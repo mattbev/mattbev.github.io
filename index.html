@@ -4,9 +4,7 @@
 <script src="./js/blurryload.js"></script>
 
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+    <head>        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Matt Beveridge</title>
@@ -14,27 +12,18 @@
         <base target="_blank">
     </head>
     
-    <body>
+    <body onload="init()">
         <div id="page-container">  
             <div id="content-wrap">
                 
                 <div id="smallnav">
-                    <a href="index.html" target="_self"><h1 class="header-mini">Matt Beveridge</h1></a>
-<!--
-                    <p class="header-sub">AI/ML at MIT</p>
-                    <div id="icons">
-                        <a href="https://www.linkedin.com/in/mattbev/" class="fa fa-linkedin"></a>
-                        <a href="https://github.com/mattbev" class="fa fa-github"></a>
-                        <a href="mailto:mattbev@mit.edu" class="fa fa-envelope" target="_self"></a>
-                    </div>
--->
-                    
+                    <a href="index.html" target="_self"><h1 class="header-mini">Matt Beveridge</h1></a>                    
                     <button class="openbtn" onclick="openNav()">&#9776;</button>
                 </div>      
                 
                 <nav id="sidebar">       
                     
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" target="_self">&times;</a>
+<!--                    <a href="javascript:void(0)" class="closebtn" onclick=closeNav("0.25s") target="_self">&times;</a>-->
                     
                     
                     <a href="index.html" target="_self"><h1 class="header header-main">Matt Beveridge</h1></a>
@@ -73,12 +62,6 @@
                 
                 <div class="content">
                     <h1>Bio</h1>
-                    
-<!--
-                    <div style="display: flex; float: left; justify-content: left">
-                        <img src="assets/baybridge-small.jpeg" alt="Me" data-large="assets/baybridge.jpeg" class="blurry-load" id="mainpic">
-                    </div>
--->                    
 
                     <img src="assets/baybridge-small.jpeg" alt="Me" data-large="assets/baybridge.jpeg" class="blurry-load" id="mainpic">
                     <script>
