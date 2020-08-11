@@ -67,7 +67,7 @@ function init(){
     if (mobileCheck()){
         closeNav();  
     }
-    closeNav();
+//    closeNav();
 }
 
 
