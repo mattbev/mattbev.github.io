@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 
 <script type="text/javascript" src="./js/nav.js"></script>
-
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>Personal Portfolio | Matt Beveridge</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <base target="_blank">
     </head>
     
@@ -16,19 +19,35 @@
             <div id="content-wrap">
                 
                 <div id="smallnav">
-                    <button class="openbtn" onclick="openNav()">&#9776;</button>
-                </div>  
+                    <a href="index.html" target="_self"><h1 class="header-mini">Matt Beveridge</h1></a> 
+                    <div onclick="hamburgerMenu(this)" id="hamburgerMenu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                        
+                        <div class="mobile-menu" id="overlay-menu">
+                            <ul>
+                                <li><a href="index.html"><h2>Home</h2></a></li>
+                                <li><a href="education.html"><h2>Education</h2></a></li>
+                                <li><a href="career.html"><h2>Career</h2></a></li>
+                                <li><a href="portfolio.html"><h2 class="active">Portfolio</h2></a></li>
+                            </ul>
+                            <div id="icons">
+                                <a href="https://www.linkedin.com/in/mattbev/" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/mattbev" class="fa fa-github"></a>
+                                <a href="mailto:mattbev@mit.edu" class="fa fa-envelope" target="_self"></a>
+                            </div>
+                        </div>
+                        
+                    </div>      
+                </div>   
                 
-                <nav id="sidebar">
-                    
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" target="_self">&times;</a>
-                    
+                <nav id="sidebar">                          
                     <a href="index.html" target="_self"><h1 class="header header-main">Matt Beveridge</h1></a>
                     <p class="header header-sub">AI/ML at MIT</p>
                     
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                     <div id="icons" style="text-align: center">
-                        <a href="https://www.linkedin.com/in/mattbev" class="fa fa-linkedin"></a>
+                        <a href="https://www.linkedin.com/in/mattbev/" class="fa fa-linkedin"></a>
                         <a href="https://github.com/mattbev" class="fa fa-github"></a>
                         <a href="mailto:mattbev@mit.edu" class="fa fa-envelope" target="_self"></a>
                     </div>
@@ -39,12 +58,12 @@
                         <li><a href="index.html" target="_self">Home</a></li>
                         <li><a href="education.html" target="_self">Education</a></li>
                         <li><a href="career.html" target="_self">Career</a></li>
-                        <li> 
+                        <li>
                             <div class="dropdown">
                                 <button class="dropbtn semiactive"><a href="portfolio.html" target="_self">Portfolio</a></button>
                                 <div class="dropdown-content">
                                     <a href="portfolio-professional.html" target="_self">Professional</a>
-                                    <a href="portfolio-personal.html" class="active" target="_self">Personal</a>
+                                    <a href="portfolio-personal.html" target="_self" class="active">Personal</a>
                                 </div>
                             </div>
                         </li>
@@ -62,7 +81,14 @@
                                 <ul>
                                     <li><a class="intext-link" href="portfolio-personal.html#BlacktipResearch" target="_self">Blacktip Research</a></li>
                                     <li><a class="intext-link" href="portfolio-personal.html#PersonalWebsite" target="_self">Personal Website</a></li>
+                                    <li><a class="intext-link" href="portfolio-personal.html#DiscreteCosineTransform" target="_self">Discrete Cosine Transform</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul>
+                                    <li><a class="intext-link" href="portfolio-personal.html#PercolationTheory" target="_self">Percolation Theory</a></li>
                                     <li><a class="intext-link" href="portfolio-personal.html#PythonCLIBlackjack" target="_self">Python CLI Blackjack</a></li>
+                                    <li><a class="intext-link" href="portfolio-personal.html#InformationTheory" target="_self">Information Theory</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -72,48 +98,139 @@
                     <hr>
                     <br><br>
                     
-                    <div id="BlacktipResearch" style="text-align: center">
-                        <img src="assets/blacktiplogo.PNG" width="100px">
-                        <a href="http://www.blacktipresearch.com" class="project-title"><h2>Blacktip Research</h2></a>
-                        <p>View on <a class="intext-link" href="https://pypi.org/project/blacktip/">PyPI</a>.</p>
-                    </div>
-                    <div style="text-align: left">                        
-                        <p>Blacktip Research is a joint venture that strives to increase financial clarity. It was born as a result of the following frustrations:</p>
-                        
-                        <ul>
-                            <li><b>Directly accessing public company records is insanely slow</b>. To compare several companies across several years would require downloading a bunch of CSVs and manually parsing them.</li>
-                            <li><b>Data aggregators that do the above for you are prohibitively expensive</b>. They range from several hundred dollars per year just for access to the data, up to tens of thousands for top of the line services like a Bloomberg terminal. The former only gives you the (publicly available through the SEC) data, and the latter has bells and whistles but is too expensive for the average joe.</li>
-                        </ul>
-                        
-                        <p>For these reasons, we've developed a Python library for public company fundamental analysis affectionately called <b>Angler</b>. Angler remains in early development, and in the near future we plan to expand its capabilities to include trading data and analysis. In the distant future, one of Blacktip's focuses is robo-advising.</p>
-                        
-                        <a class="intext-link">More details</a>
-                        
-                    </div>
-                    
-                    <br><br>
-                    <hr>
-                    <br>
-                    
-                    <div id="PersonalWebsite" style="text-align: center">
-                        <a href="index.html" class="project-title"><h2>mattbeveridge.com</h2></a>
-                        <p>Personal website.</p>
-                    </div>
-                    <div style="text-align: left">
-                        <p>This website was build from scratch using HTML, CSS, and Javascript. It was done as an exercise to hone my web development skills - skills that were not taught during my educational journey.</p>
+                    <div class="block">
+                        <div id="BlacktipResearch" style="text-align: center">
+                            <img src="assets/blacktiplogo.PNG" width="100px">
+                            <a href="http://www.blacktipresearch.com" class="project-title"><h2>Blacktip Research</h2></a>
+                            <p>View on <a class="intext-link" href="https://pypi.org/project/blacktip/">PyPI</a>.</p>
+                        </div>
+                        <div style="text-align: left">                        
+                            <p>Blacktip Research is a joint venture that strives to increase financial clarity. It was born as a result of the following frustrations:</p>
+
+                            <ul>
+                                <li><b>Directly accessing public company records is insanely slow</b>. To compare several companies across several years would require downloading a bunch of CSVs and manually parsing them.</li>
+                                <li><b>Data aggregators that do the above for you are prohibitively expensive</b>. They range from several hundred dollars per year just for access to the data, up to tens of thousands for top of the line services like a Bloomberg terminal. The former only gives you the (publicly available through the SEC) data, and the latter has bells and whistles but is too expensive for the average joe.</li>
+                            </ul>
+
+                            <p>For these reasons, we've developed a Python library for public company fundamental analysis affectionately called <b>Angler</b>. Angler remains in early development, and in the near future we plan to expand its capabilities to include trading data and analysis. In the distant future, one of Blacktip's focuses is robo-advising.</p>
+
+                            <a class="intext-link">More details</a>
+
+                        </div>
                     </div>
                     
                     <br><br>
                     <hr>
                     <br>
                     
-                    <div id="PythonCLIBlackjack" style="text-align: center">
-                        <a href="index.html" class="project-title"><h2>Python CLI Blackjack</h2></a>
-                        <p>Simple Python CLI game where users can play Blackjack.</p>
+                    
+                    <div class="block">
+                        <div id="PersonalWebsite" style="text-align: center">
+                            <div id="PWHeader">
+                                <a href="index.html" target="_self"><h1 class="header header-main">Matt Beveridge</h1></a>
+                                <p class="header header-sub">AI/ML at MIT</p>
+                                <div id="icons" style="text-align: center">
+                                    <a href="https://www.linkedin.com/in/mattbev/" class="fa fa-linkedin"></a>
+                                    <a href="https://github.com/mattbev" class="fa fa-github"></a>
+                                    <a href="mailto:mattbev@mit.edu" class="fa fa-envelope" target="_self"></a>
+                                </div>
+
+                            </div>
+                            <a href="index.html" class="project-title"><h2>mattbeveridge.com</h2></a>
+                            <p>Personal website.</p>
+                        </div>
+                        <div style="text-align: left">
+                            <p>This website was build from scratch using HTML, CSS, and Javascript. It was done as an exercise to hone my web development skills - skills that were not taught during my educational journey.</p>
+                            <p>Looking at the <a class="intext-link" href="https://github.com/mattbev/mattbev.github.io">repo</a> for the website you'll see 2 branches. The first of which, <b>pure</b> is a pure HTML/CSS/JS version of this website. This is the version I began my web dev journey in.</p>
+                            <p>However, creating a website solely using these 3 languages is very tedious. I eventually got annoyed, especially with making the pure version mobile compatible, thus I began the <b>bootstrap</b> branch. The <b>bootstrap</b> branch is a version of this website build using the popular framework <a class="intext-link" href="https://getbootstrap.com/">Bootstrap</a> which does much of the formatting for you.</p>
+                            <p>Currently, the website you are viewing is built from the <b>pure</b> branch. The <b>bootstrap</b> branch is a work in progress.</p>
+                        </div>
                     </div>
-                    <div style="text-align: left">
-                        <p>Blackjack... you know the premise. Future work includes implementing a webfacing ascii-based interface.</p>
+                    
+                    <br><br>
+                    <hr>
+                    <br>
+                    
+                    <div id="DiscreteCosineTransform" class="block">
+                        <div style="text-align: center">
+                            <img src="assets/dct.PNG" width="75%">
+                            <a href="https://github.com/mattbev/discrete-cosine-transform" class="project-title"><h2>Discrete Cosine Transform</h2></a>
+                            <p>A research paper delving into the discrete cosine transform.</p>
+                        </div>
+                        <div style="text-align: left">
+                            <p>For the quick and dirty, check out <a class="intext-link" href="https://github.com/mattbev/discrete-cosine-transform/blob/master/DCT.ipynb">this Jupyter notebook</a> for an overview of the discrete cosine transform (DCT) and my paper.</p>
+                            <p><a class="intext-link" href="https://github.com/mattbev/discrete-cosine-transform/blob/master/18_335_Final_Project.pdf">This paper</a> goes into more detail and gives context for what is covered in the Jupyter notebook. In it, three algorithms are discussed for computing the DCT: the naive algorithm, DCT using the fast fourier transform, and Lee's algorithm. The latter is the culmination of the paper and its performance is compared against industry standards.</p>
+                        </div>
                     </div>
+                    
+                    <br><br>
+                    <hr>
+                    <br>
+                    
+                    <div id="AssymetricProcesses" class="block">
+                        <div style="text-align: center">
+                            <img src="assets/state-diagram.PNG" width="50%">
+                            <a href="https://github.com/mattbev/assymetric-processes" class="project-title"><h2>Assymetric Processes</h2></a>
+                            <p>A research paper delving into assymetric processes.</p>
+                        </div>
+                        <div style="text-align: left">
+                            <p><a class="intext-link" href="https://github.com/mattbev/assymetric-processes/blob/master/Asymmetric_Processes%20(final).pdf">This paper</a> presents several different theorems related to the behavior of assymetric processes (Markov chains) under different conditions. We examine 2 specific cases: the closed markov chain (a loop) and the open markov chain (open-ended line). Further, we show the two are equivalent under the right conditions.</p>
+                            <p>On a personal note, the state diagram shown above is the culmination of my LaTeX knowledge. Made from scratch, it's my favorite diagram I've made.</p>
+                            <p>Additionally, there are several Jupyter notebooks in the repo used for empirical results in the paper.</p>
+                        </div>
+                    
+                    </div>
+                    
+                    <br><br>
+                    <hr>
+                    <br>
+                    
+                    
+                    <div id="PercolationTheory" class="block">
+                        <div style="text-align: center">
+                            <img src="assets/percolation.png" width="75%">
+                            <a href="https://github.com/mattbev/Percolation" class="project-title"><h2>Percolation Theory</h2></a>
+                            <p>A research paper delving into percolation theory.</p>
+                        </div>
+                        <div style="text-align: left">
+                            <p>How timely that I wrote a mathematic paper relating to disease spread during a pandemix...</p>
+                            <p><a class="intext-link" href="https://github.com/mattbev/Percolation/blob/master/Percolation_paper_final.pdf">This paper</a> presents several different theorems related to the rate at which something spreads across a population. <i>Percolation</i> refers to the act of water dripping through coffee grounds, or something of that sort. Thus, we are interested in just how far that water will travel before it stops and under which conditions that water will travel infinitely.</p>
+                            <p>Additionally, there are several Jupyter notebooks in the repo used for empirical results in the paper.</p>
+                        </div>
+                    
+                    </div>
+                                        
+                    <br><br>
+                    <hr>
+                    <br>
+                    
+                    <div class="block">
+                        <div id="InformationTheory" style="text-align: center">
+                            <h3>\[ H(X) = - \sum_{x\in X}p_x \log p_x \]</h3>
+                            <a href="https://github.com/mattbev/information-theory" class="project-title"><h2>Information Theory</h2></a>
+                            <p>Several research papers regarding different aspects of information theory.</p>
+                        </div>
+                        <div style="text-align: left">
+                            <p><a class="intext-link" href="https://github.com/mattbev/information-theory/blob/master/EffectOfNon-TypicalCodewordsOnMaximum-LikelihoodDecoding.pdf">The first paper</a> discusses decoding in the Z-channel. <a class="intext-link" href="https://github.com/mattbev/information-theory/blob/master/OptimalRouletteBetting%20(Beveridge%2C%20Matthew).pdf">The second paper</a> is a longer paper discussing roulette betting strategies. In this paper, I use the the Horse Racing Problem of information theory as a launching point. This same idea applies to portfolio theory in the stock market.</p>
+                            <p>Additionally, there is a Jupyter notebook detailing some simulations used for empirical results in the second paper.</p>
+                        </div>
+                    </div>
+                    
+                    <br><br>
+                    <hr>
+                    <br>
+                    
+                    <div class="block">
+                        <div id="PythonCLIBlackjack" style="text-align: center">
+                            <a href="https://github.com/mattbev/Side_Projects/tree/master/card_games" class="project-title"><h2>Python CLI Blackjack</h2></a>
+                            <p>Simple Python CLI game where users can play Blackjack.</p>
+                        </div>
+                        <div style="text-align: left">
+                            <p>Blackjack... you know the premise. Future work includes implementing a webfacing ascii-based interface.</p>
+                        </div>
+                    </div>                   
+ 
+                    
                 </div>
                 
             </div>

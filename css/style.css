@@ -85,7 +85,7 @@ hr {
 }
 
 nav {
-/*    box-shadow: 2px 0px 3px #3f3f3f;*/
+    box-shadow: 1px 0px 2px #3f3f3f;
     height: 100%;
     width: 250px;
     position: fixed;
@@ -126,7 +126,7 @@ nav li a {
   text-decoration: none;
 }
 nav li a:hover {
-    transition: .25s;
+/*    transition: .1s;*/
     background-color: #666;
 }
 nav .active {
@@ -165,6 +165,7 @@ nav .semiactive{
 body {
     font-family: Montserrat;
     font-size: 12pt;
+    line-height: 1.5;
 }
 
 a {
@@ -172,7 +173,7 @@ a {
     text-decoration: none;
 }
 .intext-link:hover{
-    color: #333333;
+    text-decoration: underline;
 }
 
 #icons{
@@ -314,6 +315,7 @@ button {
 
 
 .row {
+  width: 100%;
   display: flex;
 }
 
@@ -519,4 +521,21 @@ nav .closebtn:hover{
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-6px, -5px) ;
   transform: rotate(45deg) translate(-6px, -5px) ;
+}
+
+#PWHeader{
+    padding-top: 10px;
+    margin: auto;
+    width: 75%;
+    border-radius: 10px;
+    background-color: #333333;
+}
+.block{
+/*
+    padding: 20px;
+    background-color: #bababa;
+    border-radius: 10px;
+*/
+/*    border: solid 1px #333333;*/
+/*    border-color: black;*/
 }
