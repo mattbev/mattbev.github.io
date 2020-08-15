@@ -445,7 +445,7 @@ nav .closebtn:hover{
     opacity: 0;
     pointer-events: none;
     
-    transition: opacity .25s ease-in;
+/*    transition: opacity .25s ease-in;*/
     -webkit-transition: opacity .25s  ease-in;
     -moz-transition: opacity .25s  ease-in;
     -o-transition: opacity .25s  ease-in;
