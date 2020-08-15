@@ -1,19 +1,30 @@
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-//function openNav() {
-//    document.getElementById("sidebar").style.width = "250px";
-//    var elements = document.getElementsByClassName("content");
-//    for(var i=0; i<elements.length; i++) { 
-//        elements[i].style.marginLeft = "250px";
-//    }
-//    var smallnav = document.getElementById("smallnav");
-//    smallnav.style.display = "none";
-//    var page = document.getElementById("page-container");
-//    page.style.paddingTop = "0";
-//    page.style.transition = "0";
-//}
-function openNav(){
-    document.getElementById("mobile-menu").style.display = "block";
+function openNav() {
+    document.getElementById("sidebar").style.width = "250px";
+    var elements = document.getElementsByClassName("content");
+    for(var i=0; i<elements.length; i++) { 
+        elements[i].style.marginLeft = "250px";
+    }
+    var smallnav = document.getElementById("smallnav");
+    smallnav.style.display = "none";
+    var page = document.getElementById("page-container");
+    page.style.paddingTop = "0";
 }
+function slowOpenNav() {
+    document.getElementById("sidebar").style.width = "250px";
+    var elements = document.getElementsByClassName("content");
+    for(var i=0; i<elements.length; i++) { 
+        elements[i].style.marginLeft = "250px";
+    }
+    var smallnav = document.getElementById("smallnav");
+    smallnav.style.display = "none";
+    var page = document.getElementById("page-container");
+    page.style.paddingTop = "0";
+    page.style.transition = "0";
+}
+//function openNav(){
+//    document.getElementById("mobile-menu").style.display = "block";
+//}
 
 function hamburgerMenu(x) {
 //    var menu = document.getElementById("overlay-menu");
@@ -30,6 +41,17 @@ function closeNav() {
     document.getElementById("sidebar").style.width = "0";
     var elements = document.getElementsByClassName("content");
     for(var i=0; i<elements.length; i++) { 
+        elements[i].style.marginLeft = "0";
+    }
+    var smallnav = document.getElementById("smallnav");
+    smallnav.style.display = "block";
+    var page = document.getElementById("page-container");
+    page.style.paddingTop = "85px";
+}
+function slowCloseNav() {
+    document.getElementById("sidebar").style.width = "0";
+    var elements = document.getElementsByClassName("content");
+    for(var i=0; i<elements.length; i++) { 
         elements[i].style.transition = "margin-left .25s";
         elements[i].style.marginLeft = "0";
     }
@@ -41,7 +63,7 @@ function closeNav() {
 }
 
 function quickCloseNav(){
-    document.getElementById("sidebar").style.width = "0";
+   document.getElementById("sidebar").style.width = "0";
     var elements = document.getElementsByClassName("content");
     for(var i=0; i<elements.length; i++) { 
         elements[i].style.transition = "margin-left 0s";
@@ -61,14 +83,14 @@ window.mobileCheck = function() {
   return check;
 };
 
-function init(){
-    var width = getWidth();
-//    document.getElementsByClassName("header-main")[0].textContent = mobileCheck();
-    if (mobileCheck()){
-        closeNav();  
-    }
-//    closeNav();
-}
+//function init(){
+//    var width = getWidth();
+////    document.getElementsByClassName("header-main")[0].textContent = mobileCheck();
+//    if (mobileCheck() || width   < 1024){
+//        closeNav();  
+//    }
+////    closeNav();
+//}
 
 
 function getWidth() {
@@ -98,5 +120,32 @@ function getHeight() {
 //        $block.toggleClass('show');
 //    });
 //});
+
+function fullWidth(x){
+    x.style.width = "100%";
+    x.style.maxWidth = "100%";
+}
+function halfWidth(x){
+    x.style.width = "50%";
+    x.style.maxWidth = "50%";
+}
+
+
+function responsive(){
+    var width = getWidth();
+    var pic = document.getElementById("mainpic");
+
+    // small screen
+    if (width < 768) {
+        closeNav(); // minimize sidebar
+        fullWidth(pic); //make picture fullwidth
+    }
+    
+    // large screen
+    else {
+        openNav();
+        halfWidth(pic);
+    }
+}
 
 

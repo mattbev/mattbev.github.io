@@ -9,10 +9,9 @@
         <title>Portfolio | Matt Beveridge</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <base target="_blank">
     </head>
     
-    <body>
+    <body onload="responsive()" onresize="responsive()">
         <div id="page-container">  
             <div id="content-wrap">
                 
@@ -78,12 +77,12 @@
                     <hr>
                     <br><br>
                     
-                    <div class="row">
-                        <button class="column portfolio-button" style="text-align: left" onclick="window.location.href='portfolio-professional.html';">
+                    <div>
+                        <button id="professionalPortfolioButton" class="portfolio-button" style="text-align: left" onclick="window.location.href='portfolio-professional.html';">
                             <h2><span>Professional</span></h2>
                             <p>Projects I've done during the course of my professional career.</p>
                         </button>
-                        <button class="column portfolio-button" style="text-align: left" onclick="window.location.href='portfolio-personal.html';">
+                        <button id="professionalPortfolioButton" class="portfolio-button" style="text-align: left" onclick="window.location.href='portfolio-personal.html';">
                             <h2><span>Personal</span></h2>
                             <p>Projects I've done on my own time; either for pleasure, education, or out of entrepreneurial spirit.</p>
                         </button>

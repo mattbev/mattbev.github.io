@@ -21,7 +21,6 @@ html {
     background: #333333;
     color: white;
     font-family: Montserrat;
-    min-width: 230px;
 }
 
 .header-main{
@@ -39,7 +38,7 @@ html {
     color: white;
 /*    color: black;*/
 /*    font-size: 20pt;*/
-    font-size: 28pt;
+    font-size: 26pt;
     margin-top: 10px;
     padding-left: 10%;
     padding-bottom: 0;
@@ -98,11 +97,11 @@ nav {
 }
 @media screen and (max-height: 450px){
     #sidebar {padding-top: 15px;}
-    .openbtn{margin-left: 15px;}
+/*    .openbtn{margin-left: 15px;}*/
 } 
 @media screen and (max-width: 800px){
     nav .closebtn{
-        display: block;
+/*        display: block;*/
     }
 }
 
@@ -139,7 +138,7 @@ nav .semiactive{
     background-color: #49738e;
 }
 #sidebar{
-    transition: width .25s;
+/*    transition: width .25s;*/
 }
 
 
@@ -149,7 +148,7 @@ nav .semiactive{
     padding-top: 30px;
     margin-left: 250px;
 /*    min-width: 450px;*/
-    transition: .25s;
+/*    transition: .25s;*/
 }
 
 #page-container {
@@ -177,7 +176,7 @@ a {
 }
 
 #icons{
-    min-width: 250px;
+/*    min-width: 250px;*/
 }
 .fa {
     color: #bababa;
@@ -267,7 +266,11 @@ button {
   background-color: #49738e; 
   border: none;
   color: white;
-  padding: 15px 32px;
+/*  padding: 15px 32px;*/
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 32px;
+  padding-right: 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -275,6 +278,10 @@ button {
     cursor: pointer;
 }
 .portfolio-button{
+    margin: auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 10px;
 }
 .portfolio-button:hover {
@@ -320,9 +327,11 @@ button {
 }
 
 .column {
-  flex: 50%;
+/*  width: 30%;*/
+/*  flex: 50%;*/
   margin: 10px;
 }
+
 
 
 
@@ -539,3 +548,8 @@ nav .closebtn:hover{
 /*    border: solid 1px #333333;*/
 /*    border-color: black;*/
 }
+
+/*
+#professionalPortfolioButton{
+    width: 50%;
+}*/

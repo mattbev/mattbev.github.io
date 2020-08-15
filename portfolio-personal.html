@@ -11,10 +11,9 @@
         <title>Personal Portfolio | Matt Beveridge</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <base target="_blank">
     </head>
     
-    <body>
+    <body onload="responsive()" onresize="responsive()">
         <div id="page-container">  
             <div id="content-wrap">
                 
@@ -129,7 +128,7 @@
                             <div id="PWHeader">
                                 <a href="index.html" target="_self"><h1 class="header header-main">Matt Beveridge</h1></a>
                                 <p class="header header-sub">AI/ML at MIT</p>
-                                <div id="icons" style="text-align: center">
+                                <div id="icons" style="text-align: center min-width=0;">
                                     <a href="https://www.linkedin.com/in/mattbev/" class="fa fa-linkedin"></a>
                                     <a href="https://github.com/mattbev" class="fa fa-github"></a>
                                     <a href="mailto:mattbev@mit.edu" class="fa fa-envelope" target="_self"></a>
