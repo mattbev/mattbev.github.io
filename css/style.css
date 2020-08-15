@@ -444,8 +444,8 @@ nav .closebtn:hover{
 #overlay-menu{
     opacity: 0;
     pointer-events: none;
-    z-index: 100;
-/*    position: fixed;*/
+/*    z-index: 100;*/
+    position: fixed;
     
     transition: opacity .25s ease-in;
     -webkit-transition: opacity .25s  ease-in;
@@ -460,7 +460,7 @@ nav .closebtn:hover{
     width: 100%;
     background-color: white;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     left: 0;
 }
 
