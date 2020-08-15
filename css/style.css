@@ -447,10 +447,10 @@ nav .closebtn:hover{
 /*    z-index: 100;*/
     position: fixed;
     
-/*    transition: opacity .25s ease-in;*/
+    transition: opacity .25s ease-in;
     -webkit-transition: opacity .25s  ease-in;
-/*    -moz-transition: opacity .25s  ease-in;*/
-/*    -o-transition: opacity .25s  ease-in;*/
+    -moz-transition: opacity .25s  ease-in;
+    -o-transition: opacity .25s  ease-in;
 }
 
 .mobile-menu{
@@ -459,22 +459,21 @@ nav .closebtn:hover{
     height: 100%;
     width: 100%;
     background-color: white;
-    position: fixed;
+/*    position: relative;*/
     z-index: 100;
     left: 0;
 }
 
 .change #overlay-menu{
-/*
-    transition: opacity .25s ease-in;
-    -webkit-transition: opacity .25s  ease-in;
-    -moz-transition: opacity .25s  ease-in;
-    -o-transition: opacity .25s  ease-in;
-*/
-    
     opacity: .9;
     pointer-events: auto;
 }
+
+#overlay{
+    z-index: 100;
+}
+
+
 .mobile-menu ul {
   list-style-type: none;
   margin: 0;

@@ -12,8 +12,12 @@ function openNav() {
     page.style.paddingTop = "0";
 }
 
-function hamburgerMenu(x) {
-    x.classList.toggle("change");
+function hamburgerMenu() {
+    var menu = document.getElementById("hamburgerMenu");
+    var overlay = document.getElementById("overlay");
+    menu.classList.toggle("change");
+    overlay.classList.toggle("change");
+//    x.classList.toggle("change");
 }
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
