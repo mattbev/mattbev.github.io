@@ -465,6 +465,11 @@ nav .closebtn:hover{
 }
 
 .change #overlay-menu{
+    transition: opacity .25s ease-in;
+    -webkit-transition: opacity .25s  ease-in;
+    -moz-transition: opacity .25s  ease-in;
+    -o-transition: opacity .25s  ease-in;
+    
     opacity: .9;
     pointer-events: auto;
 }
