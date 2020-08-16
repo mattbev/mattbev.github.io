@@ -30,7 +30,7 @@ function closeNav() {
     var smallnav = document.getElementById("smallnav");
     smallnav.style.display = "block";
     var page = document.getElementById("page-container");
-    page.style.paddingTop = "85px";
+    page.style.paddingTop = "75px";
 }
 
 window.mobileCheck = function() {
@@ -73,17 +73,26 @@ function halfWidth(x){
 function responsive(){
     var width = getWidth();
     var pic = document.getElementById("mainpic");
+    var contents = document.getElementsByClassName("content");
 
     // small screen
     if (width < 768 || mobileCheck()) {
         closeNav(); // minimize sidebar
         fullWidth(pic); //make picture fullwidth
+        for(var i=0; i<contents.length; i++) { 
+            contents[i].style.paddingLeft = "5%";
+            contents[i].style.paddingRight = "5%";
+        }
     }
     
     // large screen
     else {
         openNav();
         halfWidth(pic);
+        for(var i=0; i<contents.length; i++) { 
+            contents[i].style.paddingLeft = "15%";
+            contents[i].style.paddingRight = "15%";
+        }
     }
 }
 
