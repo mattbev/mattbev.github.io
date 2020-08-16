@@ -60,25 +60,15 @@ function getHeight() {
   );
 }
 
-function fullWidth(x){
+function setWidth(item, width){
     try{
-        x.style.width = "100%";
-        x.style.maxWidth = "100%";
+        item.style.width = width;
+        item.style.maxWidth = width;
     } catch(err){
         return false;
     }
     return true;
 }
-function halfWidth(x){
-    try{
-        x.style.width = "50%";
-        x.style.maxWidth = "50%";
-    } catch(err){
-        return false;
-    }
-    return true;
-}
-
 
 function responsive(){
     var width = getWidth();
@@ -89,7 +79,7 @@ function responsive(){
     // small screen
     if (width < 768 || mobileCheck()) {
         closeNav(); // minimize sidebar
-        fullWidth(pic); //make picture fullwidth
+        setWidth(pic, "100%"); //make picture fullwidth
         for(var i=0; i<contents.length; i++) { 
             contents[i].style.paddingLeft = "8%";
             contents[i].style.paddingRight = "8%";
@@ -99,7 +89,7 @@ function responsive(){
     // large screen
     else {
         openNav();
-        halfWidth(pic);
+        setWidth(pic, "50%");
         for(var i=0; i<contents.length; i++) { 
             contents[i].style.paddingLeft = "15%";
             contents[i].style.paddingRight = "15%";

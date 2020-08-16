@@ -82,9 +82,10 @@ hr {
 #mainpic{
     max-width: 50%;
     height: auto;
-    margin:0px 20px 20px 0px; 
+/*    margin:0px 20px 20px 0px; */
+    margin-bottom: 20px;
+    margin-right: 20px;
     border-radius: 5%; 
-    box-shadow: 0 0 8px 8px white inset;
     float: left;
 }
 
@@ -554,6 +555,10 @@ nav .closebtn:hover{
 }
 #PWHeader p, .icons{
     font-size: 11pt;
+}
+
+.emph{
+    color: #49738e;
 }
 
 
