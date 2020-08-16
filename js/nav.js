@@ -74,6 +74,7 @@ function responsive(){
     var width = getWidth();
     var pic = document.getElementById("mainpic");
     var contents = document.getElementsByClassName("content");
+    var blocks = document.getElementsByClassName("block");
 
 
     // small screen
@@ -84,6 +85,9 @@ function responsive(){
             contents[i].style.paddingLeft = "8%";
             contents[i].style.paddingRight = "8%";
         }
+        for(var i=0; i<blocks.length; i++) { 
+            setWidth(blocks[i], "90%")
+        }
     }
     
     // large screen
@@ -93,6 +97,9 @@ function responsive(){
         for(var i=0; i<contents.length; i++) { 
             contents[i].style.paddingLeft = "15%";
             contents[i].style.paddingRight = "15%";
+        }
+        for(var i=0; i<blocks.length; i++) { 
+            setWidth(blocks[i], "75%")
         }
     }
 }
