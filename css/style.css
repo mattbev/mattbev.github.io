@@ -177,12 +177,13 @@ nav .semiactive{
     padding-bottom: 2rem;
 }
 
-
 body {
-/*    font-family: Montserrat;*/
     font-family: OpenSans;
     font-size: 12pt;
     line-height: 1.5;
+}
+.body-change{
+    overflow-y: hidden;
 }
 
 body h1, h2, h3, h4, h5, h6{
