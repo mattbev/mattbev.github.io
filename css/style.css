@@ -89,7 +89,7 @@ hr {
 }
 
 nav {
-    box-shadow: 1px 0px 2px #3f3f3f;
+/*    box-shadow: 1px 0px 2px #3f3f3f;*/
     height: 100%;
     width: 250px;
     position: fixed;
@@ -152,8 +152,6 @@ nav .semiactive{
     padding-right: 15%;
     padding-top: 30px;
     margin-left: 250px;
-/*    min-width: 450px;*/
-/*    transition: .25s;*/
 }
 
 #page-container {
@@ -383,7 +381,7 @@ nav .closebtn:hover{
     position: fixed;
     z-index: 2;
     overflow-x: hidden;
-    box-shadow: 0px 1px 1px #3f3f3f;
+/*    box-shadow: 0px 1px 1px #3f3f3f;*/
 
     
 /*    margin: 0px 20px;*/
@@ -448,7 +446,7 @@ nav .closebtn:hover{
 #overlay-menu{
     opacity: 0;
     pointer-events: none;
-    position: absolute;
+    position: fixed;
     
     transition: opacity .25s ease-in;
     -webkit-transition: opacity .25s  ease-in;
@@ -551,17 +549,11 @@ nav .closebtn:hover{
     border-radius: 10px;
     background-color: #333333;
 }
-.block{
-/*
-    padding: 20px;
-    background-color: #bababa;
-    border-radius: 10px;
-*/
-/*    border: solid 1px #333333;*/
-/*    border-color: black;*/
+#PWHeader a h1{
+    font-size: 20pt;
+}
+#PWHeader p, .icons{
+    font-size: 11pt;
 }
 
-/*
-#professionalPortfolioButton{
-    width: 50%;
-}*/
+

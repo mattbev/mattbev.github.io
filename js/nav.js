@@ -61,12 +61,22 @@ function getHeight() {
 }
 
 function fullWidth(x){
-    x.style.width = "100%";
-    x.style.maxWidth = "100%";
+    try{
+        x.style.width = "100%";
+        x.style.maxWidth = "100%";
+    } catch(err){
+        return false;
+    }
+    return true;
 }
 function halfWidth(x){
-    x.style.width = "50%";
-    x.style.maxWidth = "50%";
+    try{
+        x.style.width = "50%";
+        x.style.maxWidth = "50%";
+    } catch(err){
+        return false;
+    }
+    return true;
 }
 
 
@@ -75,13 +85,14 @@ function responsive(){
     var pic = document.getElementById("mainpic");
     var contents = document.getElementsByClassName("content");
 
+
     // small screen
     if (width < 768 || mobileCheck()) {
         closeNav(); // minimize sidebar
         fullWidth(pic); //make picture fullwidth
         for(var i=0; i<contents.length; i++) { 
-            contents[i].style.paddingLeft = "5%";
-            contents[i].style.paddingRight = "5%";
+            contents[i].style.paddingLeft = "8%";
+            contents[i].style.paddingRight = "8%";
         }
     }
     
