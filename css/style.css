@@ -96,6 +96,7 @@ hr {
     max-width: 50%;
     height: auto;
 /*    margin:0px 20px 20px 0px; */
+    margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
     border-radius: 10px; 
@@ -598,14 +599,15 @@ nav .closebtn:hover{
     margin: 10px;
 }
 
-#mit-png{
-    min-width: 10%;
+.mit-png{
+    min-width: 65px;
     width: 90%;
     height: auto;
-    margin: auto;
-    vertical-align: middle;
-    padding-top: 15px;
-/*    margin-top: 35%;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    vertical-align: top;
+    margin-top: 20px;
     display: flex;
 }
 .education-school{

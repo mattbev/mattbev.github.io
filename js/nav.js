@@ -76,6 +76,9 @@ function responsive(){
     var pic = document.getElementById("mainpic");
     var contents = document.getElementsByClassName("content");
     var blocks = document.getElementsByClassName("block");
+    
+    var education_items = document.getElementsByClassName("education-item");
+    var education_logos = document.getElementsByClassName("education-logo");
 
 
     // small screen
@@ -83,11 +86,17 @@ function responsive(){
         closeNav(); // minimize sidebar
         setWidth(pic, "100%"); //make picture fullwidth
         for(var i=0; i<contents.length; i++) { 
-            contents[i].style.paddingLeft = "8%";
-            contents[i].style.paddingRight = "8%";
+            contents[i].style.paddingLeft = "5%";
+            contents[i].style.paddingRight = "5%";
         }
         for(var i=0; i<blocks.length; i++) { 
             setWidth(blocks[i], "90%")
+        }
+        for(var i=0; i<education_items.length; i++) { 
+            setWidth(education_items[i], "100%")
+        }
+        for(var i=0; i<education_logos.length; i++) { 
+            education_logos[i].style.display = "none";
         }
     }
     
@@ -101,6 +110,12 @@ function responsive(){
         }
         for(var i=0; i<blocks.length; i++) { 
             setWidth(blocks[i], "75%")
+        }
+        for(var i=0; i<education_items.length; i++) { 
+            setWidth(education_items[i], "80%")
+        }
+        for(var i=0; i<education_logos.length; i++) { 
+            education_logos[i].style.display = "flex";
         }
     }
 }
