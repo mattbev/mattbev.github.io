@@ -2,10 +2,13 @@
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
     document.getElementById("sidebar").style.width = "250px";
-    var elements = document.getElementsByClassName("content");
-    for(var i=0; i<elements.length; i++) { 
-        elements[i].style.marginLeft = "250px";
-    }
+    var elements = new Set([
+        ...document.getElementsByClassName("content"),
+        ...document.getElementsByClassName("wide-content")
+    ]);
+    elements.forEach(function(value){
+        value.style.marginLeft = "250px"
+    });
     var smallnav = document.getElementById("smallnav");
     smallnav.style.display = "none";
     var page = document.getElementById("page-container");
@@ -24,10 +27,13 @@ function hamburgerMenu() {
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
 function closeNav() {
     document.getElementById("sidebar").style.width = "0";
-    var elements = document.getElementsByClassName("content");
-    for(var i=0; i<elements.length; i++) { 
-        elements[i].style.marginLeft = "0";
-    }
+    var elements = new Set([
+        ...document.getElementsByClassName("content"),
+        ...document.getElementsByClassName("wide-content")
+    ]);
+    elements.forEach(function(value){
+        value.style.marginLeft = "0"
+    });
     var smallnav = document.getElementById("smallnav");
     smallnav.style.display = "block";
     var page = document.getElementById("page-container");
@@ -79,10 +85,12 @@ function responsive(){
     
     var education_items = document.getElementsByClassName("education-item");
     var education_logos = document.getElementsByClassName("education-logo");
+    
+    var career_logos = document.getElementsByClassName("career-logo");
 
 
-    // small screen
-    if (width < 768 || mobileCheck()) {
+    // small screen 768
+    if (width < 1024 || mobileCheck()) {
         closeNav(); // minimize sidebar
         setWidth(pic, "100%"); //make picture fullwidth
         for(var i=0; i<contents.length; i++) { 
@@ -98,10 +106,17 @@ function responsive(){
         for(var i=0; i<education_logos.length; i++) { 
             education_logos[i].style.display = "none";
         }
+        for (var i=0; i<career_logos.length; i++) {
+            career_logos[i].style.display = "none";
+        }
     }
     
     // large screen
     else {
+        var overlay = document.getElementById("overlay")
+        if (overlay.classList.contains("change")){
+            hamburgerMenu();
+        }
         openNav();
         setWidth(pic, "50%");
         for(var i=0; i<contents.length; i++) { 
@@ -116,6 +131,9 @@ function responsive(){
         }
         for(var i=0; i<education_logos.length; i++) { 
             education_logos[i].style.display = "flex";
+        }
+        for (var i=0; i<career_logos.length; i++) {
+            career_logos[i].style.display = "flex";
         }
     }
 }
