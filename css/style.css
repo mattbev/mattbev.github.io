@@ -613,12 +613,14 @@ nav .closebtn:hover{
     min-width: 65px;
     width: 90%;
     height: auto;
+    margin: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
     vertical-align: top;
     margin-top: 20px;
     display: flex;
+    max-height: 20%;
 }
 .primary{
     color: #49738e;
