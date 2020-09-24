@@ -118,7 +118,7 @@ function responsive(){
             hamburgerMenu();
         }
         openNav();
-        setWidth(pic, "50%");
+        setWidth(pic, "70%");
         for(var i=0; i<contents.length; i++) { 
             contents[i].style.paddingLeft = "15%";
             contents[i].style.paddingRight = "15%";

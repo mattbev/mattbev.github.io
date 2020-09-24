@@ -93,14 +93,18 @@ hr {
 }
 
 #mainpic{
-    max-width: 50%;
+    display: block;
+/*    max-width: 50%;*/
+    width: 70%;
     height: auto;
 /*    margin:0px 20px 20px 0px; */
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 20px;
+/*    margin-right: 20px;*/
     border-radius: 10px; 
-    float: left;
+/*    float: left;*/
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav {
@@ -612,6 +616,7 @@ nav .closebtn:hover{
 .mit-png{
     min-width: 65px;
     width: 90%;
+/*    max-width: 100px;*/
     height: auto;
     margin: auto;
     margin-left: auto;
@@ -620,7 +625,7 @@ nav .closebtn:hover{
     vertical-align: top;
     margin-top: 20px;
     display: flex;
-    max-height: 20%;
+/*    max-height: 20%;*/
 }
 .primary{
     color: #49738e;
