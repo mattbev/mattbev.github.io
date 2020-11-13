@@ -92,7 +92,7 @@ function responsive(){
     // small screen 768
     if (width < 1024 || mobileCheck()) {
         closeNav(); // minimize sidebar
-        setWidth(pic, "100%"); //make picture fullwidth
+//        setWidth(pic, "50%"); //make picture fullwidth
         for(var i=0; i<contents.length; i++) { 
             contents[i].style.paddingLeft = "5%";
             contents[i].style.paddingRight = "5%";
@@ -118,7 +118,7 @@ function responsive(){
             hamburgerMenu();
         }
         openNav();
-        setWidth(pic, "70%");
+//        setWidth(pic, "50%");
         for(var i=0; i<contents.length; i++) { 
             contents[i].style.paddingLeft = "15%";
             contents[i].style.paddingRight = "15%";
