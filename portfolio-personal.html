@@ -93,13 +93,15 @@
                         <div class="row">
                             <div class="col">
                                 <ul>
+                                    <li><a class="intext-link" href="portfolio-personal.html#RobotJuggler" target="_self">Robot Juggler</a></li>
+                                    <li><a class="intext-link" href="portfolio-personal.html#FederatedLearning" target="_self">Federated Learning</a></li>
                                     <li><a class="intext-link" href="portfolio-personal.html#BlacktipResearch" target="_self">Blacktip Research</a></li>
                                     <li><a class="intext-link" href="portfolio-personal.html#PersonalWebsite" target="_self">Personal Website</a></li>
-                                    <li><a class="intext-link" href="portfolio-personal.html#DiscreteCosineTransform" target="_self">Discrete Cosine Transform</a></li>
                                 </ul>
                             </div>
                             <div class="col">
                                 <ul>
+                                    <li><a class="intext-link" href="portfolio-personal.html#DiscreteCosineTransform" target="_self">Discrete Cosine Transform</a></li>
                                     <li><a class="intext-link" href="portfolio-personal.html#PercolationTheory" target="_self">Percolation Theory</a></li>
                                     <li><a class="intext-link" href="portfolio-personal.html#InformationTheory" target="_self">Information Theory</a></li>
                                     <li><a class="intext-link" href="portfolio-personal.html#PythonCLIBlackjack" target="_self">Python CLI Blackjack</a></li>
@@ -111,6 +113,46 @@
                     <br><br>
                     <hr>
                     <br><br>
+                    
+                    <div>
+                        <div id="RobotJuggler" style="text-align: center">
+                            <iframe width="400" height="350" src="https://www.youtube.com/embed/MCTis1PE7GY?list=PLgrIYYAv6csFq5eZb88mapJA8CULxmz_h" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <a href="https://github.com/mattbev/robot-juggler" class="project-title"><h2>Robot Juggler</h2></a>
+                            <p>Robotic control project.</p>
+                        </div>
+                        <div style="text-align: left">                        
+                            <p>A project to create a robotic arm that juggles a ball about a central axis, despite the starting coordinates of the ball. This project was done in <a class="intext-link" href="drake.mit.edu">PyDrake</a> for <a class="intext-link" href="http://manipulation.csail.mit.edu/Fall2020/index.html">MIT's course 6.881 - Intelligent Robot Manipulation</a>.</p>
+
+                            <p>The main principle of this project is implementing a mirrored kinematics controller, and then applying constraints to prevent divergence. See the paper and presentation below for further details.</p>
+
+                            <a class="intext-link" href="assets/6_881_Project_Report.pdf">Paper</a>
+                            <br>
+                            <a class="intext-link" href="https://www.youtube.com/watch?v=m5UnMWihWC4&t=5s">Presentation</a>
+
+                        </div>
+                    </div>
+                    
+                    <br><br>
+                    <hr>
+                    <br>
+                    
+                    <div>
+                        <div id="FederatedLearning" style="text-align: center">
+                            <img src="assets/fl.PNG" width="500px">
+                            <a href="https://github.com/mattbev/6.867-final-project" class="project-title"><h2>Federated Learning</h2></a>
+                            <p>Attacks and defenses against federated learning.</p>
+                        </div>
+                        <div style="text-align: left">                        
+                            <p>A project to implement attacks and defenses for federated learning. This project was done in <a class="intext-link" href="drake.mit.edu">PyDrake</a> for <a class="intext-link" href="http://manipulation.csail.mit.edu/Fall2020/index.html">MIT's course 6.881 - Intelligent Robot Manipulation</a>.</p>
+
+                            <p>We implement several attacks including: label flipping, random label assignment, GAN reconstruction, and universal adversarial perturbation (UAP). The novel application of the latter, UAP, is the main innovation of our work and we implement it against a PCA-based label flipping defense.</p>
+                        </div>
+                    </div>
+                    
+                    <br><br>
+                    <hr>
+                    <br>
+                    
 
                     <div>
                         <div id="BlacktipResearch" style="text-align: center">
@@ -126,7 +168,7 @@
                                 <li><b>Data aggregators that do the above for you are prohibitively expensive</b>. They range from several hundred dollars per year just for access to the data, up to tens of thousands for top of the line services like a Bloomberg terminal. The former only gives you the (publicly available through the SEC) data, and the latter has bells and whistles but is too expensive for the average Joe.</li>
                             </ul>
 
-                            <p>For these reasons we've developed a Python library for public company fundamental analysis, affectionately called <b>Angler</b>. Angler remains in early development, and in the near future we plan to extend its capabilities to include trading data, further analysis, and expansion into the private sector. In the distant future, one of Blacktip's focuses is robo-advising.</p>
+                            <p>For these reasons we've developed a Python library for public company fundamental analysis. It remains in early development, and in the near future we plan to extend its capabilities to include fund data, further analysis metrics, and expansion into the private sector. In the future, the goal is whole-market analysis quickly and cheaply.</p>
 
 <!--                            <a class="intext-link">More details</a>-->
 
