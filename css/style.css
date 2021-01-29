@@ -839,3 +839,8 @@ nav .closebtn:hover{
         margin-right: 7%;
     }
 }
+
+li .publication {
+    margin: 0;
+    padding: 0;
+}
