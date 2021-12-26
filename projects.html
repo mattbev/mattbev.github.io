@@ -59,7 +59,7 @@
                 
                 <nav id="sidebar">                          
                     <a href="index.html" target="_self"><h1 class="header header-main">Matt Beveridge</h1></a>
-                    <p class="header header-sub">Computer Vision Engineer at NODAR</p>
+                    <p class="header header-sub">Deep Learning | Computer Vision</p>
                     
                     <div class="icons" style="text-align: center">
                         <a href="https://scholar.google.com/citations?user=_qZcZLoAAAAJ&hl=en&oi=ao" class="fa fa-graduation-cap"></a>
@@ -96,10 +96,11 @@
                         <div class="row">
                             <div class="col">
                                 <ul>
+                                    <li><a class="intext-link" href="#NCP-MARL" target="_self">Interpretable Multi-Agent Reinforcement Learning</a></li>
                                     <li><a class="intext-link" href="#RobotJuggler" target="_self">Robot Juggler</a></li>
                                     <li><a class="intext-link" href="#FederatedLearning" target="_self">Federated Learning</a></li>
-                                    <li><a class="intext-link" href="#BlacktipResearch" target="_self">Blacktip Research</a></li>
-                                    <li><a class="intext-link" href="#PersonalWebsite" target="_self">Personal Website</a></li>
+                                    <li><a class="intext-link" href="#finpandas" target="_self">finpandas</a></li>
+                                    <!-- <li><a class="intext-link" href="#PersonalWebsite" target="_self">Personal Website</a></li> -->
                                 </ul>
                             </div>
                             <div class="col">
@@ -107,7 +108,6 @@
                                     <li><a class="intext-link" href="#DiscreteCosineTransform" target="_self">Discrete Cosine Transform</a></li>
                                     <li><a class="intext-link" href="#PercolationTheory" target="_self">Percolation Theory</a></li>
                                     <li><a class="intext-link" href="#InformationTheory" target="_self">Information Theory</a></li>
-                                    <li><a class="intext-link" href="#PythonCLIBlackjack" target="_self">Python CLI Blackjack</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -116,7 +116,28 @@
                     <br><br>
                     <hr>
                     <br><br>
+                   
                     
+
+                    <div>
+                        <div id="NCP-MARL" style="text-align: center">
+                            <img src="assets/ncp.png" width="90%">
+                            <a class="project-title"><h2>Interpretable Multi-Agent Reinforcement Learning</h2></a>
+                            <p>Multi-agent reinforcement learning (MARL) with neural circuit policies (NCPs).</p>
+                        </div>
+                        <div style="text-align: left">                        
+                            <p>
+                                Employing liquid time-constant neural networks in a competitive, multi-agent reinforcement learning environment
+                                for autonomous driving. Using saliency and visualizualization to determine robustness of learned policies.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <br><br>
+                    <hr>
+                    <br>
+
+
                     <div>
                         <div id="RobotJuggler" style="text-align: center">
                             <iframe width="90%" height="350" src="https://www.youtube.com/embed/MCTis1PE7GY?list=PLgrIYYAv6csFq5eZb88mapJA8CULxmz_h" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -158,22 +179,41 @@
                     
 
                     <div>
-                        <div id="BlacktipResearch" style="text-align: center">
-                            <img src="assets/blacktiplogo.PNG" width="100px">
-                            <a href="http://www.blacktipresearch.com" class="project-title"><h2>Blacktip Research</h2></a>
-                            <p>View on <a class="intext-link" href="https://pypi.org/project/blacktip/">PyPI</a>. [Deprecated/WIP: now see <a href='https://github.com/mattbev/finpandas'>finpandas</a>]</p>
+                        <div id="finpandas", style="text-align: center;"> 
+                            <!-- <div style="text-align: left">
+                                <pre class="line-numbers">
+                                    <code class="language-python">
+                                        from finpandas import fundamentals, stocks
+
+                                        # examine 10-K filings
+                                        form10ks = fundamentals.ten_k("aapl", [2016, 2017, 2018])
+
+                                        # examine historical stock prices
+                                        stock_prices = stocks.prices("aapl", "2018-01-01", "2020-12-31")
+
+                                        # example calculations
+                                        roe = form10qs.return_on_equity()
+
+                                    </code>
+                                </pre> 
+                                \[ \texttt{from finpandas import fundamentals, stocks} \]
+                                \[ \texttt{form10ks = fundamentals.ten_k("aapl", [2016, 2017, 2018])} \]
+                                \[ \texttt{stock_prices = stocks.prices("aapl", "2018-01-01", "2020-12-31")} \]
+                                \[ \texttt{roe = form10qs.return_on_equity()} \]
+                            </div> -->
+                            <a href="http://github.com/mattbev/finpandas" class="project-title"><h2>finpandas</h2></a>
+                            <p>Open financial information.</p>
                         </div>
                         <div style="text-align: left">                        
-                            <p>Blacktip Research is a joint venture that strives to increase financial clarity. It was born as a result of the following frustrations:</p>
+                            <p><i>finpandas</i> is a joint venture that strives to increase financial clarity. It was born as a result of the following frustrations:</p>
 
                             <ul>
-                                <li><b>Directly accessing public company records is insanely slow</b>. To compare several companies across several years would require downloading a bunch of CSVs and manually parsing them.</li>
-                                <li><b>Data aggregators that do the above for you are prohibitively expensive</b>. They range from several hundred dollars per year just for access to the data, up to tens of thousands for top of the line services like a Bloomberg terminal. The former only gives you the (publicly available through the SEC) data, and the latter has bells and whistles but is too expensive for the average Joe.</li>
+                                <li>Directly accessing public company records is insanely slow.</li>
+                                <li>Data aggregators that do the above for you are prohibitively expensive.</li>
                             </ul>
 
-                            <p>For these reasons we've developed a Python library for public company fundamental analysis. It remains in early development, and in the near future we plan to extend its capabilities to include fund data, further analysis metrics, and expansion into the private sector. In the future, the goal is whole-market analysis quickly and cheaply.</p>
-
-<!--                            <a class="intext-link">More details</a>-->
+                            <p>For these reasons we've developed a Python library for public company fundamental analysis. It remains in early development, and in the near future we plan to extend its capabilities to include fund data, further analysis metrics, and expansion into the private sector. 
+                            The end goal is quick and cheap whole-market analysis.</p>
 
                         </div>
                     </div>
@@ -183,7 +223,7 @@
                     <br>
                     
                     
-                    <div>
+                    <!-- <div>
                         <div id="PersonalWebsite" style="text-align: center">
                             <div id="PWHeader">
                                 <a href="index.html" target="_self"><h1 class="header header-main">Matt Beveridge</h1></a>
@@ -208,28 +248,8 @@
                     
                     <br><br>
                     <hr>
-                    <br>
+                    <br> -->
                     
-<!--
-                    <div>
-                        <div id="Anonavi" style="text-align: center">
-                            <img src="assets/dct.PNG" width="75%">
-                            <a href="https://github.com/mattbev/discrete-cosine-transform" class="project-title"><h2>Anonavi</h2></a>
-                            <p>A simple tool to anonamize profile pictures in an aesthetically pleasing way.</p>
-                        </div>
-                        <div style="text-align: left">
-                            <p>TODO</p>
-                            <form action="/action_page.php">
-                              <input type="file" id="myFile" name="filename">
-                              <input type="submit">
-                            </form>
-                        </div>                    
-                    </div>
-                    
-                    <br><br>
-                    <hr>
-                    <br>
--->
                     
                     <div>
                         <div id="DiscreteCosineTransform" style="text-align: center">
@@ -294,21 +314,7 @@
                             <p><a class="intext-link" href="https://github.com/mattbev/information-theory/blob/master/EffectOfNon-TypicalCodewordsOnMaximum-LikelihoodDecoding.pdf">The first paper</a> discusses decoding in the Z-channel. <a class="intext-link" href="https://github.com/mattbev/information-theory/blob/master/OptimalRouletteBetting%20(Beveridge%2C%20Matthew).pdf">The second paper</a> is a longer paper discussing roulette betting strategies. In this paper, I use the the Horse Racing Problem of information theory as a launching point. This same idea applies to portfolio theory in the stock market.</p>
                             <p>Additionally, there is a Jupyter notebook detailing some simulations used for empirical results in the second paper.</p>
                         </div>
-                    </div>
-                    
-                    <br><br>
-                    <hr>
-                    <br>
-                    
-                    <div>
-                        <div id="PythonCLIBlackjack" style="text-align: center">
-                            <a href="https://github.com/mattbev/Side_Projects/tree/master/card_games" class="project-title"><h2>Python CLI Blackjack</h2></a>
-                            <p>Simple Python CLI game where users can play Blackjack.</p>
-                        </div>
-                        <div style="text-align: left">
-                            <p>Blackjack... you know the premise. Future work includes implementing a webfacing ascii-based interface.</p>
-                        </div>
-                    </div>                   
+                    </div>              
 
  
                     

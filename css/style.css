@@ -844,3 +844,9 @@ li .publication {
     margin: 0;
     padding: 0;
 }
+
+li .spotlight {
+    margin: 0;
+    padding: 0;
+    color: #FF00FF;
+}
