@@ -204,12 +204,16 @@ body h1, h2, h3, h4, h5, h6{
 }
 
 a {
-    color: #49738e;
+    color: #176a9d;
     text-decoration: none;
+    /* font-weight: bold; */
 }
-.intext-link{
-    font-weight: bold;
-}
+/* a:hover{
+    text-decoration: underline;
+} */
+/* .intext-link{
+    font-weight: 500;
+} */
 .intext-link:hover{
     text-decoration: underline;
 }
@@ -540,6 +544,19 @@ nav .closebtn:hover{
 
 .blurry-load{-webkit-filter:blur(8px);filter:blur(8px)}@-webkit-keyframes blurOut{0%{-webkit-filter:blur(20px);filter:blur(20px)}50%{-webkit-filter:blur(10px);filter:blur(10px)}to{-webkit-filter:blur(0);filter:blur(0)}}@keyframes blurOut{0%{-webkit-filter:blur(20px);filter:blur(20px)}50%{-webkit-filter:blur(10px);filter:blur(10px)}to{-webkit-filter:blur(0);filter:blur(0)}}.blur-out{-webkit-animation:blurOut .5s ease-out;animation:blurOut .5s ease-out}@-webkit-keyframes shimmer{0%{background-position:-100vw 0}to{background-position:100vw 0}}@keyframes shimmer{0%{background-position:-100vw 0}to{background-position:100vw 0}}.no-blur{-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:shimmer;animation-name:shimmer;-webkit-animation-timing-function:linear;animation-timing-function:linear;background:#f6f7f8;background:gradient(linear,left top,right top,color-stop(8%,#eee),color-stop(18%,#ddd),color-stop(33%,#eee));background:linear-gradient(90deg,#eee 8%,#ddd 18%,#eee 33%)}
 
+.publication-block{
+    padding: 20px 30px;
+    /* border: 2px solid #49738e; */
+    position: relative;
+    border-radius: 6px;
+}
+.publication-block:hover{
+    /* border: 2px solid #e8e8e8; */
+    /* margin-left: -20px;
+    padding-left: 20px; */
+    background-color: #e8e8e8;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+}
 
 #hamburgerMenu{
     margin-top: 20px;
@@ -720,10 +737,13 @@ nav .closebtn:hover{
   top: 22px;
   width: 0;
   right: 30px;
-  border: medium solid #49738e;
+  /* border: medium solid #49738e; */
+  /* border-color: transparent transparent transparent #49738e; */
+  border: medium solid #e8e8e8;
+  border-color: transparent transparent transparent #e8e8e8;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #49738e;
 }
+
 
 /* Add arrows to the right container (pointing left) */
 .right::before {
@@ -733,9 +753,11 @@ nav .closebtn:hover{
   top: 22px;
   width: 0;
   left: 30px;
-  border: medium solid #49738e;
+  /* border: medium solid #49738e; */
+  /* border-color: transparent #49738e transparent transparent; */
+  border: medium solid #e8e8e8;
+  border-color: transparent #e8e8e8 transparent transparent;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #49738e transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -746,10 +768,15 @@ nav .closebtn:hover{
 /* The actual content */
 .timeline-block {
   padding: 20px 30px;
-  border: 2px solid #49738e;
+  /* border: 2px solid #49738e; */
+  border: 2px solid #e8e8e8;
   position: relative;
   border-radius: 6px;
-  color: black;
+  /* color: black; */
+  background-color: #e8e8e8;
+}
+.timeline-block:hover{
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
 }
 .timeline-block button{
     margin-top: 15px;
@@ -814,9 +841,11 @@ nav .closebtn:hover{
   .container::before {
 /*    left: 65px;*/
       left: 50px;
-    border: medium solid #49738e;
+    /* border: medium solid #49738e; */
+    border: medium solid #e8e8e8;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #49738e transparent transparent;
+    /* border-color: transparent #49738e transparent transparent; */
+    border-color: transparent #e8e8e8 transparent transparent;
   }
 
 /* Make sure all circles are at the same spot */
