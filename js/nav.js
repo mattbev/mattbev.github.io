@@ -147,9 +147,8 @@ function responsive() {
 class NavBar extends HTMLElement {
     constructor() {
         super();
-
     }
-  
+
     connectedCallback() {
         this.innerHTML = `
         <div id="smallnav">
@@ -165,9 +164,10 @@ class NavBar extends HTMLElement {
         <div id="overlay">
             <div class="mobile-menu" id="overlay-menu">
                 <ul>
-                    <li><a href="index.html"><h2>Home</h2></a></li>
-                    <li><a href="resume.html"><h2>Resume</h2></a></li>
-                    <li><a href="portfolio.html"><h2>Portfolio</h2></a></li>
+                    <li><a href="index.html" target="_self"><h2>Home</h2></a></li>
+                    <li><a href="projects.html" target="_self"><h2>Projects</h2></a></li>
+                    <li><a href="publications.html" target="_self"><h2>Publications</h2></a></li>
+                    <li><a href="press.html" target="_self"><h2>Press</h2></a></li>
                 </ul>
                 <div class="icons">
                     <br><br>
@@ -195,7 +195,6 @@ class NavBar extends HTMLElement {
             
             <ul>
                 <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="about.html" target="_self">About</a></li>
                 <li><a href="projects.html" target="_self">Projects</a></li>
                 <li><a href="publications.html" target="_self">Publications</a></li>
                 <li><a href="press.html" target="_self">Press</a></li>

@@ -775,9 +775,9 @@ nav .closebtn:hover{
   /* color: black; */
   background-color: #e8e8e8;
 }
-.timeline-block:hover{
+/* .timeline-block:hover{
     box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
-}
+} */
 .timeline-block button{
     margin-top: 15px;
     margin-right: 0;
@@ -878,4 +878,20 @@ li .spotlight {
     margin: 0;
     padding: 0;
     color: #FF00FF;
+}
+
+.career-logo {
+    display: inline-block;
+    padding: 5px;
+    transition: transform 0.2s;
+    -webkit-transition: -webkit-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -o-transition: -o-transform 0.2s;
+}
+.career-logo:hover {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }

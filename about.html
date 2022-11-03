@@ -2,6 +2,17 @@
 
 <script type="text/javascript" src="./js/footer.js"></script>
 <script type="text/javascript" src="./js/nav.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('nav').addClass('active');
+            }
+        });
+    });
+</script>
+
 
 <html lang="en">
     <head>
@@ -19,7 +30,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>About | Matt Beveridge</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">           
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">       
     </head>
     
     <body onload="responsive()" onresize="responsive()">
@@ -39,7 +58,8 @@
                         <br>
                         
                         <div class="timeline">
-                            <img class="career-logo" src="assets/nodar-logo-tagline-black@4x.png" style="width: 40%; height: auto; float: left; margin-left: 6%; margin-top: -60px; position: absolute;">
+                            <img class="career-logo" src="assets/nodar-logo-tagline-black@4x.png" style="width: 45%; position: absolute; margin-top: -7%">
+                            <!-- style="width: 40%; height: auto; float: left; margin-left: 6%; margin-top: -60px; position: absolute;"> -->
                             <div class="container right">
                                 <div class="timeline-block">
                                     <a href="https://nodarsensor.com"><h1 class="primary">NODAR</h1></a>
