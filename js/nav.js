@@ -83,10 +83,10 @@ function responsive() {
     var contents = document.getElementsByClassName("content");
     var blocks = document.getElementsByClassName("block");
 
-    var education_items = document.getElementsByClassName("education-item");
-    var education_logos = document.getElementsByClassName("education-logo");
+    // var education_items = document.getElementsByClassName("education-item");
+    // var education_logos = document.getElementsByClassName("education-logo");
 
-    var career_logos = document.getElementsByClassName("career-logo");
+    // var career_logos = document.getElementsByClassName("career-logo");
 
 
     // small screen 768
@@ -102,16 +102,16 @@ function responsive() {
         for (var i = 0; i < blocks.length; i++) {
             setWidth(blocks[i], "90%")
         }
-        for (var i = 0; i < education_items.length; i++) {
-            setWidth(education_items[i], "100%")
-        }
+        // for (var i = 0; i < education_items.length; i++) {
+        //     setWidth(education_items[i], "100%")
+        // }
         // if (width < height) {
-        for (var i = 0; i < education_logos.length; i++) {
-            education_logos[i].style.display = "none";
-        }
-        for (var i = 0; i < career_logos.length; i++) {
-            career_logos[i].style.display = "none";
-        }
+        // for (var i = 0; i < education_logos.length; i++) {
+        //     education_logos[i].style.display = "none";
+        // }
+        // for (var i = 0; i < career_logos.length; i++) {
+        //     career_logos[i].style.display = "none";
+        // }
         // }
     }
 
@@ -130,19 +130,27 @@ function responsive() {
         for (var i = 0; i < blocks.length; i++) {
             setWidth(blocks[i], "75%")
         }
-        for (var i = 0; i < education_items.length; i++) {
-            setWidth(education_items[i], "80%")
-        }
-        for (var i = 0; i < education_logos.length; i++) {
-            education_logos[i].style.display = "flex";
-        }
-        for (var i = 0; i < career_logos.length; i++) {
-            career_logos[i].style.display = "flex";
-        }
+        // for (var i = 0; i < education_items.length; i++) {
+        //     setWidth(education_items[i], "80%")
+        // }
+        // for (var i = 0; i < education_logos.length; i++) {
+        //     education_logos[i].style.display = "flex";
+        // }
+        // for (var i = 0; i < career_logos.length; i++) {
+        //     career_logos[i].style.display = "flex";
+        // }
     }
 }
 
 
+$(function(){
+    $('a').each(function(){
+        if ($(this).prop('href') == window.location.href) {
+            $('li.active').removeClass('active');
+            $(this).addClass('active'); $(this).parents('li').addClass('active');
+        }
+    });
+});
 
 class NavBar extends HTMLElement {
     constructor() {
@@ -153,7 +161,6 @@ class NavBar extends HTMLElement {
         this.innerHTML = `
         <div id="smallnav">
             <a href="index.html" target="_self"><h1 class="header-mini">Matt Beveridge</h1></a> 
-                                
             <div onclick="hamburgerMenu()" id="hamburgerMenu">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -194,7 +201,7 @@ class NavBar extends HTMLElement {
             <hr>
             
             <ul>
-                <li><a href="index.html" target="_self">Home</a></li>
+                <li class="active"><a href="index.html" target="_self">Home</a></li>
                 <li><a href="projects.html" target="_self">Projects</a></li>
                 <li><a href="publications.html" target="_self">Publications</a></li>
                 <li><a href="press.html" target="_self">Press</a></li>

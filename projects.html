@@ -1,19 +1,10 @@
 <!DOCTYPE html>
 
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="./js/footer.js"></script>
 <script type="text/javascript" src="./js/nav.js"></script>
 <script type="text/javascript"
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script>
-    $(function(){
-        $('a').each(function(){
-            if ($(this).prop('href') == window.location.href) {
-                $(this).addClass('active'); $(this).parents('nav').addClass('active');
-            }
-        });
-    });
 </script>
 
 <html lang="en">
@@ -48,8 +39,7 @@
         <div id="page-container">  
             <div id="content-wrap">
                 
-                <navbar-component></navbar-component>
-                
+                <navbar-component></navbar-component>                
                 
                 <div class="content">                
                     
@@ -295,6 +285,10 @@
             </div>
             
         </div>
+
+        <script>
+            responsive();
+        </script>
         
     </body>
 </html>

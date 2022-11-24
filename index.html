@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="./js/footer.js"></script>
 <script type="text/javascript" src="./js/nav.js"></script>
-<script src="./js/blurryload.js"></script>
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script>
-    $(function(){
-        $('a').each(function(){
-            if ($(this).prop('href') == window.location.href) {
-                $(this).addClass('active'); $(this).parents('nav').addClass('active');
-            }
-        });
-    });
-</script>
 
 <html lang="en">
 
@@ -30,7 +20,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Matt Beveridge</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -41,7 +31,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    
+
     <style type="text/css">
         #h-container {
             height: 100%;
@@ -67,15 +57,16 @@
         }
     </style>
 
+
 </head>
 
-<body onload="responsive()" onresize="responsive()">
+<body onload="responsive();" onresize="responsive();">
+    
     <div id="page-container">
         <div id="content-wrap">
-
+            
             <navbar-component></navbar-component>
-
-
+            
             <div class="content">
 
                 <div id="h-container">
@@ -98,7 +89,7 @@
                     <h2>Bio</h2>
                     <p>
                         I am a Computer Vision Engineer at <a href="https://nodarsensor.com"
-                            class="intext-link">NODAR</a> solving untethered 3D perception
+                            class="intext-link">NODAR</a> focused on untethered 3D perception
                         and calibration for autonomy, using principles of signal processing and
                         deep learning. I completed my Master of Engineering
                         at the <a href="http://web.mit.edu/" class="intext-link">Massachusetts Institute of Technology
@@ -109,9 +100,11 @@
                             Computer Science and Artificial Intelligence Laboratory (CSAIL)</a>
                         where I researched computer vision, robotics, and machine learning. I also completed my Bachelor
                         of Science at MIT in EECS and Mathematics,
-                        where I spent time researching in CSAIL, the <a href="https://media.mit.edu/"
+                        where I spent time working in CSAIL, the <a href="https://media.mit.edu/"
                             class="intext-link">MIT Media Lab</a>, and outside of academia at
-                        places such as <a href="https://nasa.gov/" class="intext-link">NASA</a>. Additionally, I
+                        places such as <a href="https://nasa.gov/" class="intext-link">NASA</a> and <a
+                            href="https://www.draper.com/" class="intext-link">
+                            Draper</a>. Additionally, I
                         completed a minor in Theater Arts.
                     </p>
 
@@ -143,7 +136,8 @@
 
                     <p><b>Sep 2022:</b> Our work on motion tracking to identify and track turbulent filaments in fusion
                         plasmas (via Gas Puff Imaging diagnostics) was accepted to Scientific Reports. [<a
-                            href="https://arxiv.org/abs/2111.08570">paper</a>] [<a href="https://news.mit.edu/2022/fusion-machine-learning-turbulence-1101">news</a>]</p>
+                            href="https://arxiv.org/abs/2111.08570">paper</a>] [<a
+                            href="https://news.mit.edu/2022/fusion-machine-learning-turbulence-1101">news</a>]</p>
 
                     <p><b>Jan 2022:</b> A paper on bayesian optimization of droplet generating hardware at varying
                         scales (e.g., for photovoltaic cells and drug delivery) was accepted to ACS Applied Materials
@@ -183,7 +177,7 @@
 
             <div class="content" style="text-align: center">
                 <p>
-                    Last updated: <b>Nov 3<sup>rd</sup>, 2022</b>.
+                    Last updated: <b>Nov 30<sup>th</sup>, 2022</b>.
                 </p>
             </div>
 
@@ -191,6 +185,7 @@
             <copyright-component></copyright-component>
 
             <div class="content" style="text-align: center; font-size: 10pt; opacity: .7">
+                <p>Stylistic inspiration from <a href="http://www.mit.edu/~amini/">Alexander Amini</a>.</p>
                 <a href="resources.html">Resources</a>
             </div>
 
@@ -198,6 +193,10 @@
         </div>
 
     </div>
+
+    <script>
+        responsive();
+    </script>
 
 </body>
 

@@ -1,17 +1,8 @@
 <!DOCTYPE html>
 
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="./js/footer.js"></script>
 <script type="text/javascript" src="./js/nav.js"></script>
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script>
-    $(function(){
-        $('a').each(function(){
-            if ($(this).prop('href') == window.location.href) {
-                $(this).addClass('active'); $(this).parents('nav').addClass('active');
-            }
-        });
-    });
-</script>
 
 <html lang="en">
     <head>
@@ -192,6 +183,10 @@
             <copyright-component></copyright-component>
             
         </div>
+
+        <script>
+            responsive();
+        </script>
         
     </body>
 </html>
