@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-    color: #176a9d;
+    /* color: #176a9d; */
     text-decoration: none;
 }
 
@@ -39,7 +39,7 @@ a:hover {
 }
 
 .dynamic figcaption {
-    margin: 15px 0 0 0;
+    margin: 20px 0 0 0;
     font-weight: bold;
 }
 
@@ -65,10 +65,12 @@ a:hover {
 ol.publication {
     padding-left: 50px;
 }
+
 ol.publication li p {
     margin: 0;
     padding: 0;
 }
+
 ol.publication li {
     margin-top: 20px;
 }

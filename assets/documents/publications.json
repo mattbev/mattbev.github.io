@@ -1,0 +1,175 @@
+[
+    {
+        "title": "Tracking Blobs in the Turbulent Edge Plasma of a Tokamak Fusion Device",
+        "authors": "Woonghee Han, Randall Pietersen, Rafael Villamor-Lora, Matthew Beveridge, Nicola Offeddu, Theodore Golfinopoulos, Christian Theiler, James L. Terry, Earl S. Marmar, Iddo Drori",
+        "venue": "Scientific Reports",
+        "year": 2022,
+        "publication_type": "Journal",
+        "links": [
+            "<a href='https://arxiv.org/abs/2111.08570'>arXiv</a>"
+        ],
+        "notes": null
+    },
+    {
+        "title": "A Machine Learning and Computer Vision Approach to Rapidly Optimize Multiscale Droplet Generation",
+        "authors": "Alexander E. Siemenn, Evyatar Shaulsky, Matthew Beveridge, Tonio Buonassisi, Sara Hashmi, Iddo Drori",
+        "venue": "ACS Applied Materials & Interfaces",
+        "year": 2022,
+        "publication_type": "Journal",
+        "links": null,
+        "notes": null
+    },
+    {
+        "title": "Pedestrian Wind Factor Estimation in Complex Urban Environments",
+        "authors": "Sarah Mokhtar, Matthew Beveridge, Melody Cao, Iddo Drori",
+        "venue": "Asian Conference on Machine Learning (ACML)",
+        "year": 2021,
+        "publication_type": "Conference",
+        "links": [
+            "<a href='https://samokhtar.github.io/UrbanPedestrianWindEstimation/index.html'>project</a>",
+            "<a href='https://arxiv.org/abs/2110.02443'>arXiv</a>"
+        ],
+        "notes": [
+            "Oral spotlight"
+        ]
+    },
+    {
+        "title": "Image2Reverb: Cross-Modal Reverb Impulse Response Synthesis",
+        "authors": "Nikhil Singh, Jeff Mentch, Jerry Ng, Matthew Beveridge, Iddo Drori",
+        "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+        "year": 2021,
+        "publication_type": "Conference",
+        "links": [
+            "<a href='https://krlennon.github.io/image2lego/'>project</a>",
+            "<a href='ttps://arxiv.org/abs/2108.08477'>arXiv</a>"
+        ],
+        "notes": null
+    },
+    {
+        "title": "Exploring the Edge/SOL Fluctuations in Negative Triangularity Plasmas on TCV",
+        "authors": "Woonghee Han, Nicola Offeddu, Theodore Golfinopoulos, Christian Theiler, Cedric Tsui, Jose Boedo, Jim Terry, Earl Marmar, Randall Pietersen, Rafael Villamor Lora, Matthew Beveridge, Iddo Drori",
+        "venue": "Annual Meeting of the American Physical Society Division of Plasma Physics",
+        "year": 2021,
+        "publication_type": "Conference",
+        "links": null,
+        "notes": null
+    },
+    {
+        "title": "Interpretable Spatiotemporal Forecasting of Arctic Sea Ice Concentration at Seasonal Lead Times",
+        "authors": "Matthew Beveridge, Lucas Pereira",
+        "venue": "Neural Information Processing Systems (NeurIPS) Workshop on Tackling Climate Change with Machine Learning (Proposals Track)",
+        "year": 2022,
+        "publication_type": "Workshop",
+        "links": null,
+        "notes": null
+    },
+    {
+        "title": "Generalizing Imaging Through Scattering Media With Uncertainty Estimates",
+        "authors": "Jared M. Cochrane, Matthew Beveridge, Iddo Drori",
+        "venue": "IEEE Winter Conference on Applications of Computer Vision (WACV) Workshop on Applications of Computational Imaging",
+        "year": 2022,
+        "publication_type": "Workshop",
+        "links": [
+            "<a href='https://openaccess.thecvf.com/content/WACV2022W/WACI/papers/Cochrane_Generalizing_Imaging_Through_Scattering_Media_With_Uncertainty_Estimates_WACVW_2022_paper.pdf'>paper</a>"
+        ],
+        "notes": null
+    },
+    {
+        "title": "Predicting Atlantic Multidecadal Variability",
+        "authors": "Glenn Liu, Peidong Wang, Matthew Beveridge, Young-Oh Kwon, Iddo Drori",
+        "venue": "Neural Information Processing Systems (NeurIPS) Workshop on Tackling Climate Change with Machine Learning",
+        "year": 2021,
+        "publication_type": "Workshop",
+        "links": [
+            "<a href='https://www.climatechange.ai/papers/neurips2021/35'>project</a>",
+            "<a href='https://www.climatechange.ai/papers/neurips2021/35/paper.pdf'>paper</a>",
+            "<a href='https://www.climatechange.ai/papers/neurips2021/35/slides.pdf'>slides</a>"
+        ],
+        "notes": "Best paper, oral spotlight"
+    },
+    {
+        "title": "Predicting Critical Biogeochemistry of the Southern Ocean",
+        "authors": "Ellen Park, Jae Deok Kim, Nadege Aoki, Melody Cao, Yamin Arefeen, Matthew Beveridge, Roo Nicholson, Iddo Drori",
+        "venue": "Neural Information Processing Systems (NeurIPS) Workshop on Tackling Climate Change with Machine Learning",
+        "year": 2021,
+        "publication_type": "Workshop",
+        "links": [
+            "<a href='https://www.climatechange.ai/papers/neurips2021/13'>project</a>",
+            "<a href='https://www.climatechange.ai/papers/neurips2021/13/paper.pdf'>paper</a>",
+            "<a href='https://www.climatechange.ai/papers/neurips2021/13/slides.pdf'>slides</a>"
+        ],
+        "notes": null
+    },
+    {
+        "title": "Artificial Intelligence Enhances Control Parameter Space Investigation in Flow-Focusing Droplet Generation",
+        "authors": "Evyatar Shaulsky, Alexander Siemenn, Matthew Beveridge, Tonio Buonassisi, Iddo Drori, Sara Hashmi",
+        "venue": "95<sup>th</sup> ACS Colloid and Surface Science Symposium",
+        "year": 2021,
+        "publication_type": "Symposium",
+        "links": null,
+        "notes": null
+    },
+    {
+        "title": "3D Vision System with Automatically Calibrated Stereo Vision Sensors and Lidar Sensor",
+        "authors": "Piotr Swierczynski, Leaf Jiang, Matthew Beveridge",
+        "venue": "Patent pending",
+        "year": 2022,
+        "publication_type": "Patent",
+        "links": null,
+        "notes": null
+    },
+    {
+        "title": "Consistent Depth Estimation in Data-Driven Simulation for Autonomous Driving",
+        "authors": "Matthew Beveridge",
+        "venue": "Massachusetts Institute of Technology",
+        "year": 2021,
+        "publication_type": "Thesis",
+        "links": null,
+        "notes": null
+    },
+    {
+        "title": "Online Preconditioning of Experimental Inkjet Hardware by Bayesian Optimization in Loop",
+        "authors": "Alexander E. Siemenn, Matthew Beveridge, Tonio Buonassisi, Iddo Drori",
+        "venue": "arXiv",
+        "year": 2022,
+        "publication_type": "Preprint",
+        "links": [
+            "<a href='https://arxiv.org/abs/2105.02858'>arXiv</a>"
+        ],
+        "notes": null
+    },
+    {
+        "title": "Image2Lego: Customized LEGO Set Generation from Images",
+        "authors": "Kyle Lennon, Katharina Fransen, Alexander O’Brien, Yumeng Cao, Matthew Beveridge, Yamin Arefeen, Nikhil Singh, Iddo Drori",
+        "venue": "arXiv",
+        "year": 2022,
+        "publication_type": "Preprint",
+        "links": [
+            "<a href='https://web.media.mit.edu/~nsingh1/image2reverb/'>project</a>",
+            "<a href='https://github.com/nikhilsinghmus/image2reverb'>code</a>",
+            "<a href='https://arxiv.org/abs/2103.14201'>arXiv</a>"
+        ],
+        "notes": null
+    },
+    {
+        "title": "Predicting Wildfire Growth",
+        "authors": "Samuel Humphries, Madeleine Jansson, Young Ryu, Matthew Beveridge, Melody Cao, Iddo Drori",
+        "venue": null,
+        "year": 2021,
+        "publication_type": "Preprint",
+        "links": null,
+        "notes": null
+    },
+    {
+        "title": "<i>finpandas</i>",
+        "authors": "Matthew Beveridge",
+        "venue": "MIT License",
+        "year": 2021,
+        "publication_type": "Software",
+        "links": [
+            "<a href='https://mattbeveridge.com/finpandas/'>documentation</a>",
+            "<a href='https://github.com/mattbev/finpandas/'>code</a>"
+        ],
+        "notes": null
+    }
+]

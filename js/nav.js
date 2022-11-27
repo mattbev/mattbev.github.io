@@ -5,7 +5,7 @@ class NavBar extends HTMLElement {
     }
     connectedCallback() {
         this.innerHTML = `
-            <nav class="navbar navbar-expand-lg" style="background-color: #e8e8e8">
+            <nav class="navbar navbar-expand-lg" style="background-color: #e8e8e8; height: 80px;">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="."><b>Matt Beveridge</b></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
