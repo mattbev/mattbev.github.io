@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<script type="text/javascript" src="./js/footer.js"></script>
+<script type="text/javascript" src="./js/nav.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('nav').addClass('active');
+            }
+        });
+    });
+</script>
+
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPNBCQB9YV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MPNBCQB9YV');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Education | Matt Beveridge</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">       
+</head>
+
+<body onload="responsive()" onresize="responsive()">
+    <div id="page-container">
+        <div id="content-wrap">
+            <navbar-component></navbar-component>
+
+            <div class="content">
+
+                <div>
+                    <h1>Degrees</h1>
+
+                    <hr>
+                    <br>
+
+                    <div class="row">
+                        <div class="column education-logo" style="width: 20%">
+                            <img src="assets/mit.png" alt="MIT" class="mit-png">
+                        </div>
+                        <div class="column education-item" style="width: 80%">
+                            <h1 class="primary">Massachusetts Institute of Technology</h1>
+                            <h3 class="secondary">MEng in Computer Science and Electrical Engineering</h3>
+                            <h3 class="secondary">Concentration in Artificial Intelligence</h3>
+                            <p>Thesis: <i>Consistent Depth Estimation in Data-Driven Simulation for Autonomous
+                                    Driving</i>.</p>
+                            <p>Thesis Advisor: Prof. Daniela Rus</p>
+                            <p>Class of 2021.</p>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <div class="row">
+                        <div class="column education-logo" style="width: 20%">
+                            <img src="assets/mit.png" alt="MIT" class="mit-png">
+                        </div>
+                        <div class="column education-item" style="width: 80%">
+                            <h1 class="primary">Massachusetts Institute of Technology</h1>
+                            <h3 class="secondary">B.S. in Computer Science and Electrical Engineering</h3>
+                            <h3 class="secondary">B.S. in Mathematics</h3>
+                            <p>Minor in Theater Arts.</p>
+                            <p>Involved in: MIT EnergyHack, MIT Football, Delta Kappa Epsilon Fraternity.</p>
+                            <p>Class of 2020.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br><br><br>
+
+                <div>
+                    <h1>Coursework</h1>
+                    <p style="margin-top: 0;">In reverse chronological order.</p>
+
+                    <hr>
+                    <br>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.884">
+                            <h3>6.884 &mdash; Computational Sensorimotor Learning</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.864">
+                            <h3>6.864 &mdash; Natural Language Processing</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.867">
+                            <h3>6.867 &mdash; Machine Learning</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.881">
+                            <h3>6.881 &mdash; Intelligent Robotic Manipulation</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=18.335">
+                            <h3>18.335/6.337 &mdash; Intro to Numerical Methods</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.013">
+                            <h3>6.013 &mdash; Electromagnetics Waves and Applications</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=18.821">
+                            <h3>18.821 &mdash; Project Lab in Mathematics</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=18.408">
+                            <h3>18.408 &mdash; An Algorithmist's Toolkit</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=18.424">
+                            <h3>18.424 &mdash; Seminar in Information Theory</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.819">
+                            <h3>6.819 &mdash; Advances in Computer Vision</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=18.217">
+                            <h3>18.217<sup>*</sup> &mdash; Combinatorial Theory</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=18.615">
+                            <h3>18.615 &mdash; Intro to Stochastic Processes</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.046">
+                            <h3>6.046/18.410<sup>*</sup> &mdash; Design and Analysis of Algorithms</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=15.075">
+                            <h3>15.075 &mdash; Statistical Thinking and Data Analysis</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.s191">
+                            <h3>6.S191<sup>*</sup> &mdash; Deep Learning</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.036">
+                            <h3>6.036 &mdash; Intro to Machine Learning</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=18.06">
+                            <h3>18.06 &mdash; Linear Algebra</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.002">
+                            <h3>6.002 &mdash; Circuits and Electronics</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.031">
+                            <h3>6.031 &mdash; Elements of Software Construction</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=18.600">
+                            <h3>18.600 &mdash; Probability and Random Variables</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.009">
+                            <h3>6.009 &mdash; Fundamentals of Programming</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.006">
+                            <h3>6.006 &mdash; Intro to Algorithms</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.034">
+                            <h3>6.034 &mdash; Artificial Intelligence</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=18.03">
+                            <h3>18.03 &mdash; Differential Equations</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.01">
+                            <h3>6.01 &mdash; Intro to EECS via Robotics</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=5.111">
+                            <h3>5.111 &mdash; Principles of Chemical Science</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=8.02">
+                            <h3>8.02 &mdash; Physics 2</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=8.01">
+                            <h3>8.01 &mdash; Physics 1</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.178">
+                            <h3>6.178 &mdash; Intro to Software Engineering</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=18.02">
+                            <h3>18.02 &mdash; Calculus</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=7.012">
+                            <h3>7.012 &mdash; Intro Biology</h3>
+                        </a>
+                    </div>
+
+                    <div class="block">
+                        <a style="color: black" href="http://student.mit.edu/catalog/search.cgi?search=6.0001">
+                            <h3>6.0001 &mdash; Intro to CS Programming in Python</h3>
+                        </a>
+                    </div>
+
+
+                    <br>
+                    <div style="text-align: right">
+                        <p><sup>*</sup>Audited
+                        <p>
+                        <p><sup>&dagger;</sup>Current</p>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <copyright-component></copyright-component>
+
+        </div>
+
+    </div>
+
+    <script>
+        responsive();
+    </script>
+
+</body>
+
+</html>

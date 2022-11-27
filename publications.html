@@ -1,192 +1,262 @@
 <!DOCTYPE html>
 
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="./js/footer.js"></script>
-<script type="text/javascript" src="./js/nav.js"></script>
-
 <html lang="en">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPNBCQB9YV"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
 
-            gtag('config', 'G-MPNBCQB9YV');
-        </script>
-        
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <title>Publications | Matt Beveridge</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-    </head>
-    
-    <body onload="responsive()" onresize="responsive()">
-        <div id="page-container">  
-            <div id="content-wrap">
-                
-                <navbar-component></navbar-component>
-                
-                
-                <div class="content">                
-                    <h1>Publications</h1>
-                    <p>Papers and patents.</p>
-                    <p>See <a class="intext-link" href="https://scholar.google.com/citations?user=_qZcZLoAAAAJ&hl=en&oi=ao">google scholar</a> for an updated list.</p>
-                    
-                    <br>
-                    <hr>
-                    <br>       
-                    
-                    <h2>2022</h2>
-                    <ol reversed start='14'>    
-                                              
-                        <li>
-                            <h3 class="publication">Tracking Blobs in the Turbulent Edge Plasma of Tokamak Fusion Reactors.</h3>
-                            <p class="publication">Woonghee Han, Randall Pietersen, Rafael Villamor Lora, <b>Matthew Beveridge</b>, Earl Marmar, Jim Terry, Iddo Drori.</p>
-                            <p class="publication">In Review.</p>
-                            [<a href="https://arxiv.org/abs/2111.08570">arXiv</a>]
-                        </li>
-                        
-                        <br>
+<head>
+    <baseheader-component></baseheader-component>
 
-                        <li>
-                            <h3 class="publication">Predicting Wildfire Growth.</h3>
-                            <p class="publication">Samuel Humphries, Madeleine Jansson, Young Ryu, <b>Matthew Beveridge</b>, Yumeng Cao, Iddo Drori.</p>
-                            <p class="publication">In Review.</p>
-                        </li>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.css">
 
-                        <br>
+    <title>Publications | Matt Beveridge</title>
+</head>
 
-                        <li>
-                            <h3 class="publication">Image2Lego: Customized LEGO&reg; Set Generation from Images.</h3>
-                            <p class="publication">Kyle Lennon, Katharina Fransen, Alexander O’Brien, Yumeng Cao, Matthew Beveridge, Yamin Arefeen, Nikhil Singh, Iddo Drori.</p>
-                            <p class="publication">In Review.</p>
-                            [<a href="https://arxiv.org/abs/2108.08477">arXiv</a>] [<a href="https://krlennon.github.io/image2lego/">website</a>]
-                        </li>
-        
-                        <br>
-                        
-                        <li>
-                            <h3 class="publication">A Machine Learning and Computer Vision Approach to Rapidly Optimize Multiscale Droplet Generation.</h3>
-                            <p class="publication">Alexander E. Siemenn, Evyatar Shaulsky, <b>Matthew Beveridge</b>, Tonio Buonassisi, Sara Hashmi, Iddo Drori.</p>
-                            <p class="publication">ACS Applied Materials &#38; Interfaces, 2022.</p>
-                            [<a href="http://128.84.4.18/abs/2105.13553">arXiv</a>]
-                        </li>
-                        
-                        <br>
-
-                        <li>
-                            <h3 class="publication">Generalizing Imaging Through Scattering Media With Uncertainty Estimates.</h3>
-                            <p class="publication">Jared M. Cochrane, <b>Matthew Beveridge</b>, Iddo Drori.</p>
-                            <p class="publication">IEEE Winter Conference on Applications of Computer Vision (WACV) Workshop on Applications of Computational Imaging, 2022.</p>
-                            [<a href="https://openaccess.thecvf.com/content/WACV2022W/WACI/papers/Cochrane_Generalizing_Imaging_Through_Scattering_Media_With_Uncertainty_Estimates_WACVW_2022_paper.pdf">paper</a>]
-                        </li>
-
-                    </ol>
-
-                    
-                    
-                    
-                    <h2>2021</h2>
-                    <ol reversed>    
-                        <li>
-                            <h3 class="publication">Predicting Atlantic Multidecadal Variability.</h3>
-                            <p class="publication">Glenn Liu, Peidong Wang, <b>Matthew Beveridge</b>, Young-Oh Kwon, Iddo Drori.</p>
-                            <p class="publication">Neural Information Processing Systems (NeurIPS) Workshop on Tackling Climate Change with Machine Learning, 2021. <i class="spotlight">Best paper; oral spotlight.</i></p>
-                            [<a href="https://www.climatechange.ai/papers/neurips2021/35/paper.pdf">paper</a>] [<a href="https://www.climatechange.ai/papers/neurips2021/35/slides.pdf">slides</a>] [<a href="https://www.climatechange.ai/papers/neurips2021/35">website</a>]
-                        </li>
-                        
-                        <br>
-
-                        <li>
-                            <h3 class="publication">Predicting Critical Biogeochemistry of the Southern Ocean.</h3>
-                            <p class="publication">Ellen Park, Jae Deok Kim, Nadege Aoki, Yumeng Cao, Yamin Arefeen, <b>Matthew Beveridge</b>, Roo Nicholson, Iddo Drori.</p>
-                            <p class="publication">Neural Information Processing Systems (NeurIPS) Workshop on Tackling Climate Change with Machine Learning, 2021.</p>
-                            [<a href="https://www.climatechange.ai/papers/neurips2021/13/paper.pdf">paper</a>] [<a href="https://www.climatechange.ai/papers/neurips2021/13/slides.pdf">slides</a>] [<a href="https://www.climatechange.ai/papers/neurips2021/13">website</a>]
-                        </li>
-                        
-                        <br>
-                        
-                        <li>
-                            <h3 class="publication">Artificial Intelligence Enhances Control Parameter Space Investigation in Flow-Focusing Droplet Generation.</h3>
-                            <p class="publication">Evyatar Shaulsky, Alexander Siemenn, <b>Matthew Beveridge</b>, Tonio Buonassisi, Iddo Drori, Sara Hashmi.</p>
-                            <p class="publication">ACS Colloid and Surface Science Symposium, 2021.</p>
-                        </li>
-                        
-                        <br>
-                        
-                        <li>
-                            <h3 class="publication">Exploring the Edge/SOL Fluctuations in Negative Triangularity Plasmas on TCV.</h3>
-                            <p class="publication">Woonghee Han, Nicola Offeddu, Theodore Golfinopoulos, Christian Theiler, Cedric Tsui, Jose Boedo, Jim Terry, Earl Marmar, Randall Pietersen, Rafael Villamor Lora, <b>Matthew Beveridge</b>, Iddo Drori.</p>
-                            <p class="publication">Annual Meeting of the American Physical Society Division of Plasma Physics, 2021.</p>
-                        </li>
-                        
-                        <br>
-                        
-                        <li>
-                            <h3 class="publication">Pedestrian Wind Factor Estimation in Complex Urban Environments.</h3>
-                            <p class="publication">Sarah Mokhtar, <b>Matthew Beveridge</b>, Yumeng Cao, Iddo Drori.</p>
-                            <p class="publication">Asian Conference on Machine Learning (ACML), 2021. <i class="spotlight">Long oral spotlight.</i></p>
-                            [<a href="https://arxiv.org/abs/2110.02443">arXiv</a>] [<a href="https://samokhtar.github.io/UrbanPedestrianWindEstimation/index.html">website</a>]
-                        </li>
-                        
-                        <br>
-                    
-                        <li>
-                            <h3 class="publication">Consistent Depth Estimation in Data-Driven Simulation for Autonomous Driving.</h3>
-                            <p class="publication"><b>Matthew Beveridge</b></p>
-                            <p class="publication">Master's Thesis, Massachusetts Institute of Technology.</p>
-                            [<a>DSpace</a>]
-                        </li>
-                        
-                        <br>
-                        
-                        <li>
-                            <h3 class="publication">Autonomous Optimization of Fluid Systems at Varying Length Scales.</h3>
-                            <p class="publication">Alexander E. Siemenn, Evyatar Shaulsky, <b>Matthew Beveridge</b>, Tonio Buonassisi, Sara Hashmi, Iddo Drori.</p>
-                            [<a href="https://arxiv.org/abs/2105.13553">arXiv</a>]
-                        </li>
-                        
-                        <br>
-                        
-                        <li>
-                            <h3 class="publication">Image2Reverb: Cross-Modal Reverb Impulse Response Synthesis.</h3>
-                            <p class="publication">Nikhil Singh, Jeff Mentch, Jerry Ng, <b>Matthew Beveridge</b>, Iddo Drori.</p>
-                            <p class="publication">IEEE/CVF International Conference on Computer Vision (ICCV), 2021.</p>
-                            [<a href="https://arxiv.org/abs/2103.14201">arXiv</a>] [<a href="https://github.com/nikhilsinghmus/image2reverb">code</a>] [<a href="https://web.media.mit.edu/~nsingh1/image2reverb/">website</a>]
-                        </li>
-                        
-                        <br>
-                        
-                        <li>
-                            <h3 class="publication">Online Preconditioning of Experimental Inkjet Hardware by Bayesian Optimization in Loop.</h3>
-                            <p class="publication">Alexander E. Siemenn, <b>Matthew Beveridge</b>, Tonio Buonassisi, Iddo Drori.</p>
-                            [<a href="https://arxiv.org/abs/2105.02858">arXiv</a>]
-                        </li>
-                        
-                        
-                    </ol>
-                </div>
-                
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Publications</h1>
+                <p>Papers and patents.</p>
+                <p>See <a class="intext-link"
+                        href="https://scholar.google.com/citations?user=_qZcZLoAAAAJ&hl=en&oi=ao">google scholar</a> for
+                    an
+                    updated list.</p>
             </div>
-            
-            <copyright-component></copyright-component>
-            
+
+            <!-- <div class="col" style="text-align: right; align-self: flex-end;">
+                <p><a href="#interactive-publications-table">Interact with this data.</a></p>
+            </div> -->
+
+            <hr>
+
         </div>
 
-        <script>
-            responsive();
-        </script>
+        <div class="row" id="journal-publications">
+            <h2>Journal Publications</h2>
+
+            <ol reversed class="publication">
+                <li>
+                    <p><b>Tracking Blobs in the Turbulent Edge Plasma of a Tokamak Fusion Device.</b></p>
+                    <p>Woonghee Han, Randall Pietersen, Rafael Villamor-Lora, Matthew Beveridge,
+                        Nicola Offeddu, Theodore Golfinopoulos, Christian Theiler, James L. Terry, Earl S. Marmar, Iddo
+                        Drori.</p>
+                    <p>Scientific Reports, 2022.</p>
+                </li>
+
+                <li>
+                    <p><b>A Machine Learning and Computer Vision Approach to Rapidly Optimize Multiscale Droplet
+                            Generation.</b></p>
+                    <p>Alexander E. Siemenn, Evyatar Shaulsky, Matthew Beveridge, Tonio Buonassisi, Sara Hashmi, Iddo
+                        Drori.</p>
+                    <p>ACS Applied Materials & Interfaces, 2022.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="row" id="conference-publications">
+            <h2>Conference Publications</h2>
+
+            <ol reversed class="publication">
+                <li>
+                    <p><b>Pedestrian Wind Factor Estimation in Complex Urban Environments.</b></p>
+                    <p>Sarah Mokhtar, Matthew Beveridge, Melody Cao, Iddo Drori.</p>
+                    <p>Asian Conference on Machine Learning (ACML), 2021. <span class="spotlight">Oral spotlight.
+                            </splan>
+                    </p>
+
+                </li>
+
+                <li>
+                    <p><b>Image2Reverb: Cross-Modal Reverb Impulse Response Synthesis.</b></p>
+                    <p>Nikhil Singh, Jeff Mentch, Jerry Ng, Matthew Beveridge, Iddo Drori.</p>
+                    <p>IEEE/CVF International Conference on Computer Vision (ICCV), 2021.</p>
+                </li>
+
+                <li>
+                    <p><b>Exploring the Edge/SOL Fluctuations in Negative Triangularity Plasmas on TCV.</b></p>
+                    <p>Woonghee Han, Nicola Offeddu, Theodore Golfinopoulos, Christian Theiler, Cedric Tsui, Jose Boedo,
+                        Jim Terry, Earl Marmar, Randall Pietersen, Rafael Villamor Lora, Matthew Beveridge, Iddo Drori.
+                    </p>
+                    <p>Annual Meeting of the American Physical Society Division of Plasma Physics, 2021.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="row" id="workshop-and-symposium-publications">
+            <h2>Workshop and Symposium Publications</h2>
+
+            <ol reversed class="publication">
+                <li>
+                    <p><b>Interpretable Spatiotemporal Forecasting of Arctic Sea Ice Concentration at Seasonal Lead
+                            Times.</b></p>
+                    <p>Matthew Beveridge, Lucas Pereira.</p>
+                    <p>Neural Information Processing Systems (NeurIPS) Workshop on Tackling Climate Change with Machine
+                        Learning (Proposals Track), 2022.</p>
+                </li>
+
+                <li>
+                    <p><b>Generalizing Imaging Through Scattering Media With Uncertainty Estimates.</b></p>
+                    <p>Jared M. Cochrane, Matthew Beveridge, Iddo Drori.</p>
+                    <p>IEEE Winter Conference on Applications of Computer Vision (WACV) Workshop on Applications of
+                        Computational Imaging, 2022.</p>
+                </li>
+
+                <li>
+                    <p><b>Predicting Atlantic Multidecadal Variability.</b></p>
+                    <p>Glenn Liu, Peidong Wang, Matthew Beveridge, Young-Oh Kwon, Iddo Drori.</p>
+                    <p>Neural Information Processing Systems (NeurIPS) Workshop on Tackling Climate Change with Machine
+                        Learning, 2021. <span class="spotlight">Best paper; oral spotlight.</span></p>
+                </li>
+
+                <li>
+                    <p><b>redicting Critical Biogeochemistry of the Southern Ocean.</b></p>
+                    <p>Ellen Park, Jae Deok Kim, Nadege Aoki, Melody Cao, Yamin Arefeen, Matthew Beveridge, Roo
+                        Nicholson, Iddo Drori.</p>
+                    <p>eural Information Processing Systems (NeurIPS) Workshop on Tackling Climate Change with Machine
+                        Learning, 2021.</p>
+                </li>
+
+                <li>
+                    <p><b> Artificial Intelligence Enhances Control Parameter Space Investigation in Flow-Focusing
+                            Droplet Generation.</b></p>
+                    <p>Evyatar Shaulsky, Alexander Siemenn, Matthew Beveridge, Tonio Buonassisi, Iddo Drori, Sara
+                        Hashmi.</p>
+                    <p>95<sup>th</sup> ACS Colloid and Surface Science Symposium, 2021.</p>
+                </li>
+            </ol>
+
+        </div>
+
+        <div class="row" id="patents">
+            <h2>Patents</h2>
+
+            <ol reversed class="publication">
+                <li>
+                    <p><b>3D Vision System with Automatically Calibrated Stereo Vision Sensors and Lidar Sensor.</b></p>
+                    <p>Piotr Swierczynski, Leaf Jiang, Matthew Beveridge.</p>
+                    <p>Patent pending, 2022.</p>
+                </li>
+            </ol>
+
+        </div>
+
+        <div class="row" id="theses">
+            <h2>Theses</h2>
+
+            <ol reversed class="publication">
+                <li>
+                    <p><b>Consistent Depth Estimation in Data-Driven Simulation for Autonomous Driving.</b></p>
+                    <p>Matthew Beveridge.</p>
+                    <p>Master's Thesis, Massachusetts Institute of Technology, 2021.</p>
+                </li>
+            </ol>
+
+        </div>
+
+        <div class="row" id="preprints-and-papers-under-review">
+            <h2>Preprints and Papers Under Review</h2>
+
+            <ol reversed class="publication">
+                <!-- <li>
+                    <p><b>All-Terrain Long-Range Ground Plane Determination for Obstacle Detection.</b></p>
+                    <p>Matthew Beveridge, Piotr Swierczynski, Leaf Jiang.</p>
+                    <p>2023.</p>
+                </li>
+
+                <li>
+                    <p><b>The New Stereo Vision: Kilometer-Range 3D Sensing Under Adversarial Conditions.</b></p>
+                    <p>Bernhard Kaplan, Matthew Beveridge, Piotr Swierczynski, Devavrat Jivani, and Leaf Jiang.</p>
+                    <p>2023.</p>
+                </li> -->
+
+                <li>
+                    <p><b>Online Preconditioning of Experimental Inkjet Hardware by Bayesian Optimization in Loop.</b>
+                    </p>
+                    <p>Alexander E. Siemenn, Matthew Beveridge, Tonio Buonassisi, Iddo Drori.</p>
+                    <p>arXiv, 2022.</p>
+                </li>
+
+                <li>
+                    <p><b>Image2Lego: Customized LEGO Set Generation from Images.</b></p>
+                    <p>Kyle Lennon, Katharina Fransen, Alexander O’Brien, Yumeng Cao, Matthew Beveridge, Yamin Arefeen,
+                        Nikhil Singh, Iddo Drori.</p>
+                    <p>arXiv, 2022.</p>
+                </li>
+
+                <li>
+                    <p><b>Predicting Wildfire Growth.</b></p>
+                    <p>Samuel Humphries, Madeleine Jansson, Young Ryu, Matthew Beveridge, Melody Cao, Iddo Drori.</p>
+                    <p>2021.</p>
+                </li>
+            </ol>
+
+        </div>
+
+        <div class="row" id="software">
+            <h2>Software</h2>
+
+            <ol reversed class="publication">
+                <li>
+                    <p><b><i>finpandas.</i></b></p>
+                    <p>Matthew Beveridge.</p>
+                    <p>MIT License, 2021.</p>
+                </li>
+            </ol>
+        </div>
+
+    </div>
+
+    <!-- <br>
+
+    <div class="container" id="interactive-publications-table">
+        <hr>
+
+        <br>
+
+        <h2>Interactive Publications Table</h2>
+        <div class="row">
+            <table data-toggle="table" data-pagination="true" data-search="true">
+                <thead>
+                    <tr>
+                        <th data-sortable="true" data-field="title">Title</th>
+                        <th data-sortable="true" data-field="authors">Authors</th>
+                        <th data-sortable="true" data-field="venue">Venue</th>
+                        <th data-sortable="true" data-field="year">Year</th>
+                        <th data-sortable="true" data-field="publication-type">Publication Type</th>
+                        <th data-sortable="true" data-field="links">Links</th>
+                        <th data-sortable="true" data-field="notes">Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Interpretable Spatiotemporal Forecasting of Arctic Sea Ice Concentration at Seasonal Lead
+                            Times</td>
+                        <td>Matthew Beveridge, Lucas Pereira</td>
+                        <td>Neural Information Processing Systems (NeurIPS) Workshop on Tackling Climate Change with Machine Learning (Proposals Track)</td>
+                        <td>2022</td>
+                        <td>Conference</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
         
-    </body>
+    </div> -->
+    <copyright-component></copyright-component>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/nav.js"></script>
+    <script type="text/javascript" src="./js/header.js"></script>
+    <script type="text/javascript" src="./js/footer.js"></script>
+    <script type="text/javascript" src="./js/publications.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.js"></script>
+</body>
+
 </html>
