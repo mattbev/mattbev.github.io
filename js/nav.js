@@ -1,4 +1,3 @@
-
 class NavBar extends HTMLElement {
     constructor() {
         super();
@@ -8,9 +7,7 @@ class NavBar extends HTMLElement {
             <nav class="navbar navbar-expand-lg" style="background-color: #e8e8e8;">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="."><b>Matt Beveridge</b></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href=".">Home</a>
@@ -20,6 +17,10 @@ class NavBar extends HTMLElement {
                             <a class="nav-link" href="press.html">Press</a>
                         </div>
                     </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
                 </div>
             </nav>
         `;

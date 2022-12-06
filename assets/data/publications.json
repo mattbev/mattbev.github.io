@@ -6,7 +6,10 @@
         "year": 2022,
         "publication_type": "Journal",
         "links": [
-            "<a href='https://arxiv.org/abs/2111.08570'>arXiv</a>"
+            "<a href='https://www.nature.com/articles/s41598-022-21671-w'>paper</a>",
+            "<a href='https://github.com/harryh5427/GPI-blob-tracking'>code</a>",
+            "<a href='https://arxiv.org/abs/2111.08570'>arXiv</a>",
+            "<a href='https://news.mit.edu/2022/fusion-machine-learning-turbulence-1101'>press</a>"
         ],
         "notes": null
     },
@@ -16,7 +19,11 @@
         "venue": "ACS Applied Materials & Interfaces",
         "year": 2022,
         "publication_type": "Journal",
-        "links": null,
+        "links": [
+            "<a href='https://pubs.acs.org/doi/abs/10.1021/acsami.1c19276'>paper</a>",
+            "<a href='https://github.com/PV-Lab/ML-Multiscale-Droplets'>code</a>",
+            "<a href='https://arxiv.org/abs/2105.13553'>arXiv</a>"
+        ],
         "notes": null
     },
     {
@@ -40,8 +47,9 @@
         "year": 2021,
         "publication_type": "Conference",
         "links": [
-            "<a href='https://krlennon.github.io/image2lego/'>project</a>",
-            "<a href='ttps://arxiv.org/abs/2108.08477'>arXiv</a>"
+            "<a href='https://web.media.mit.edu/~nsingh1/image2reverb/'>project</a>",
+            "<a href='https://github.com/nikhilsinghmus/image2reverb'>code</a>",
+            "<a href='https://arxiv.org/abs/2103.14201'>arXiv</a>"
         ],
         "notes": null
     },
@@ -60,7 +68,11 @@
         "venue": "Neural Information Processing Systems (NeurIPS) Workshop on Tackling Climate Change with Machine Learning (Proposals Track)",
         "year": 2022,
         "publication_type": "Workshop",
-        "links": null,
+        "links": [
+            "<a href='https://www.climatechange.ai/papers/neurips2022/109'>project</a>",
+            "<a href='https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/neurips2022/109/paper.pdf'>paper</a>",
+            "<a href='https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/neurips2022/109/slides.pdf'>slides</a>"
+        ],
         "notes": null
     },
     {
@@ -124,7 +136,9 @@
         "venue": "Massachusetts Institute of Technology",
         "year": 2021,
         "publication_type": "Thesis",
-        "links": null,
+        "links": [
+            "<a href='https://dspace.mit.edu/handle/1721.1/139136'>dspace</a>"
+        ],
         "notes": null
     },
     {
@@ -145,9 +159,8 @@
         "year": 2022,
         "publication_type": "Preprint",
         "links": [
-            "<a href='https://web.media.mit.edu/~nsingh1/image2reverb/'>project</a>",
-            "<a href='https://github.com/nikhilsinghmus/image2reverb'>code</a>",
-            "<a href='https://arxiv.org/abs/2103.14201'>arXiv</a>"
+            "<a href='https://krlennon.github.io/image2lego/'>project</a>",
+            "<a href='https://arxiv.org/abs/2108.08477'>arXiv</a>"
         ],
         "notes": null
     },
