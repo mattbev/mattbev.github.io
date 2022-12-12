@@ -4,6 +4,7 @@
 
 <head>
     <baseheader-component></baseheader-component>
+    <tracking-component></tracking-component>
     <title>Projects | Matt Beveridge</title>
 </head>
 
@@ -34,9 +35,10 @@
                             In order to safely navigate an environment autonomously, an agent will need to use an array
                             of sensors to perceive its surroundings. Each sensor's readings will need to be fused with
                             the others, and accurately knowing the relative pose of each is necessary to do so.
-                            Critically, as agents move at higher speeds and sensors are placed farther apart the effects
+                            Critically, as agents move at higher speeds and sensors are placed farther apart, the
+                            effects
                             of vibration and calibration misalignment become more pronounced &#8212; this is especially
-                            true for 3D sensing systems such as stereo depth estimation. Our work produced the first
+                            true for 3D sensing systems like stereo cameras. Our work produced the first
                             realtime per-frame autocalibration of sensor extrinsics, opening the door to a new class of
                             depth estimation that was previously not possible: wide-baseline stereo vision.
                         </p>
@@ -55,8 +57,8 @@
                             Depth estimation can be done using a variety of modalities, for example, through time of
                             flight sensing. In my work, I have focused on depth perception from camera images using both
                             monocular and stereo sensing. In the former I have explored ways to enforce temporally
-                            consistent measurements, and in the latter our work has shown the ability to detect objects
-                            the size of road debris at distances of hundreds of meters.
+                            consistent measurements in learned monocular models, and in the latter our work has shown
+                            the ability to detect objects the size of road debris at distances of hundreds of meters.
                         </p>
                     </div>
                 </div>
@@ -64,7 +66,7 @@
 
             <h2>Earth and Planetary Science</h2>
             <p class="lead">
-                Neural methods are still in the early stages of adoption for environmental modeling of Earth and other
+                Neural methods are still in the early stages of adoption for environmental modeling on Earth and other
                 celestial bodies. They show great promise.
             </p>
             <div class="row">
@@ -82,12 +84,11 @@
                 <div class="row">
                     <h3>Forecasting Arctic Sea Ice</h3>
                     <p>
-                        In this project, we propose a highly expressive spatiotemporal recurrent network architecture
-                        fit to the task of forecasting Arctic sea ice concentrations. The resultant model structure
-                        improves interpretability insights into which regions of the Arctic are most influential in
-                        overall SIC compared to existing dynamical, statistical, and learned models, and can also be
-                        supplied with mixed memory architectures to mitigate the gradient issues of existing recurrent
-                        methods.
+                        In this project, we propose highly expressive spatiotemporal neural networks
+                        fit to the task of forecasting Arctic sea ice concentration at seasonal lead times.
+                        The resultant models improve our understanding of which regions of the Arctic are most
+                        influential in overall sea ice health compared to existing dynamical, statistical, and
+                        learned models.
                     </p>
                 </div>
             </div>
