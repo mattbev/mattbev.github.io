@@ -38,23 +38,23 @@ a:hover {
     padding: 5px;
 }
 
-.dynamic figcaption {
+figcaption.dynamic {
     margin: 20px 0 0 0;
     font-weight: bold;
 }
 
-.dynamic figsubcaption {
+figsubcaption.dynamic {
     margin: 10px 0 0 0;
 }
 
-.dynamic img {
+img.dynamic {
     transition: transform 0.2s;
     -webkit-transition: -webkit-transform 0.2s;
     -moz-transition: -moz-transform 0.2s;
     -o-transition: -o-transform 0.2s;
 }
 
-.dynamic:hover img {
+img.dynamic:hover {
     transform: scale(1.1);
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
