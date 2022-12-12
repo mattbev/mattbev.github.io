@@ -25,3 +25,24 @@ class BaseHeader extends HTMLElement {
 }
 
 customElements.define('baseheader-component', BaseHeader);
+
+class Tracking extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        this.innerHTML = `
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPNBCQB9YV"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+
+                gtag('config', 'G-MPNBCQB9YV');
+            </script>
+        `;
+    }
+}
+
+customElements.define("tracking-component", Tracking);
