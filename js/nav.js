@@ -6,9 +6,7 @@ class NavBar extends HTMLElement {
         this.innerHTML = `
             <nav class="navbar navbar-expand-lg py-3" style="background-color: #e8e8e8;">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href=".">
-                        <b>Matthew Beveridge</b>
-                    </a>
+                    <b class="navbar-brand">Matthew Beveridge</b>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -29,11 +27,11 @@ $(function () {
     $('a').each(function () {
         if ($(this).prop('href') == window.location.href) {
             $('a.active').removeClass('active');
-            // $('a.aria-current').val('');
+            $('a.aria-current').val('');
             
             $(this).addClass('active');
-            // $(this).$('aria-current').val('page');
-        }
+            $(this).$('aria-current').val('page');
+        } 
     });
 });
 customElements.define('navbar-component', NavBar);
