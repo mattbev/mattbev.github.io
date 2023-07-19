@@ -35,6 +35,10 @@ a:hover {
     margin-bottom: 20px;
 }
 
+.col.dynamic {
+    margin-bottom: 5rem;
+}
+
 .dynamic figure {
     padding: 5px;
 }
@@ -53,6 +57,7 @@ img.dynamic {
     -webkit-transition: -webkit-transform 0.2s;
     -moz-transition: -moz-transform 0.2s;
     -o-transition: -o-transform 0.2s;
+    min-width: 300px;
 }
 
 img.dynamic:hover {
